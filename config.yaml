@@ -1,0 +1,121 @@
+baseURL: 'https://brayantcw.gitlab.io/brayantcw'
+languageCode: 'en-us'
+title: 'Brayant Torres - Tech Blog'
+theme: 'PaperMod'
+
+params:
+  env: production
+  title: "Brayant Torres"
+  description: "Software Engineer & Tech Enthusiast"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: "Brayant Torres"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    disableHLJS: true
+    disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Brayant Torres"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  profileMode:
+    enabled: false
+    title: "Brayant Torres"
+    subtitle: "Software Engineer & Tech Enthusiast"
+    imageUrl: "<image link>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+
+  homeInfoParams:
+    Title: "Hi there! 👋"
+    Content: "Welcome to my tech blog where I share insights about software development, programming tutorials, and technology trends."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/brayantcw"
+    - name: linkedin
+      url: "https://linkedin.com/in/brayant-torres"
+    - name: twitter
+      url: "https://twitter.com/brayantcw"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  editPost:
+    URL: "https://gitlab.com/brayantcw/brayantcw/-/edit/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: github
