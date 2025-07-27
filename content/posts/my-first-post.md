@@ -33,7 +33,7 @@ editPost:
     appendFilePath: true
 ---
 
-# Welcome to My AI Engineering Blog! 🤖
+# Welcome to My AI Engineering Blog
 
 Hello there! I'm **Brayant Torres**, a passionate AI Engineer dedicated to building intelligent systems and pushing the boundaries of artificial intelligence. Welcome to my corner of the internet where I share insights, research, and practical knowledge about AI engineering, machine learning, and the fascinating world of intelligent systems.
 
@@ -91,27 +91,27 @@ print(f"Mission: {ai_engineer.mission()}")
 
 I'll be sharing content regularly across these exciting areas:
 
-### 🧠 **Deep Learning & Neural Networks**
+### **Deep Learning & Neural Networks**
 - Architecture design patterns and best practices
 - Training optimization techniques
 - Model compression and efficiency
 
-### 🔬 **AI Research & Innovation**
+### **AI Research & Innovation**
 - Latest paper reviews and implementations
 - Experimental results and insights
 - Open-source contributions
 
-### 🛠️ **MLOps & Production AI**
+### **MLOps & Production AI**
 - End-to-end ML pipeline design
 - Model deployment strategies
 - Monitoring and maintenance
 
-### 📊 **Data Science & Analytics**
+### **Data Science & Analytics**
 - Advanced statistical techniques
 - Feature engineering strategies
 - Experimental design and A/B testing
 
-### 🌐 **AI Applications**
+### **AI Applications**
 - Computer vision projects
 - Natural language processing
 - Recommendation systems
@@ -121,11 +121,11 @@ I'll be sharing content regularly across these exciting areas:
 
 I'm particularly excited about these emerging areas in AI:
 
-- **🤖 Large Language Models**: Fine-tuning and optimizing LLMs for specific domains
-- **👁️ Computer Vision**: Object detection, segmentation, and generative models
-- **🔄 Reinforcement Learning**: Building agents that learn through interaction
-- **⚡ Edge AI**: Deploying models on mobile and IoT devices
-- **🛡️ AI Safety**: Ensuring AI systems are reliable, fair, and beneficial
+- **Large Language Models**: Fine-tuning and optimizing LLMs for specific domains
+- **Computer Vision**: Object detection, segmentation, and generative models
+- **Reinforcement Learning**: Building agents that learn through interaction
+- **Edge AI**: Deploying models on mobile and IoT devices
+- **AI Safety**: Ensuring AI systems are reliable, fair, and beneficial
 
 ## Let's Connect!
 
@@ -148,16 +148,16 @@ Here's what I'm planning to share in the coming weeks:
 ## Join the Journey
 
 Whether you're:
-- 🎓 A student learning AI/ML fundamentals
-- 👨‍💻 A software engineer transitioning to AI
-- 🔬 A researcher exploring new frontiers
-- 🏢 A professional implementing AI solutions
+- A student learning AI/ML fundamentals
+- A software engineer transitioning to AI
+- A researcher exploring new frontiers
+- A professional implementing AI solutions
 
 ...there's something here for you!
 
 Thank you for joining me on this exciting journey through the world of artificial intelligence. Together, let's explore the technologies that are reshaping our world and build AI systems that make a positive impact.
 
-Happy learning, and welcome to the future of AI! 🚀🤖
+Happy learning, and welcome to the future of AI!
 
 ---
 
