@@ -38,7 +38,7 @@ As a Cloud Solutions Architect, I focus on creating cloud-native AI solutions th
 ### Technical Expertise
 
 **Cloud Platforms & Services:**
-- Amazon Web Services (AWS): EC2, S3, Lambda, SageMaker, EKS, RDS, CloudFormation
+- Amazon Web Services (AWS): EC2, S3, Lambda, SageMaker, EKS, RDS, Terraform
 - Microsoft Azure: Virtual Machines, Blob Storage, Azure Functions, Machine Learning Studio, AKS
 - Google Cloud Platform: Compute Engine, Cloud Storage, Cloud Functions, AI Platform, GKE
 - Multi-cloud strategy and hybrid cloud deployments
