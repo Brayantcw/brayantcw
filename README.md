@@ -1,6 +1,6 @@
 # Brayant Torres - Tech Blog
 
-A modern tech blog built with Hugo and the PaperMod theme, hosted on GitLab Pages.
+A modern tech blog built with Hugo and the PaperMod theme, hosted on GitHub Pages.
 
 ## 🚀 About
 
@@ -10,8 +10,8 @@ This is my personal tech blog where I share insights about software development,
 
 - **Static Site Generator**: [Hugo](https://gohugo.io/)
 - **Theme**: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
-- **Hosting**: GitLab Pages
-- **CI/CD**: GitLab CI
+- **Hosting**: GitHub Pages
+- **CI/CD**: GitHub Actions
 
 ## 📝 Blog Topics
 
@@ -32,7 +32,7 @@ This is my personal tech blog where I share insights about software development,
 
 1. Clone the repository:
    ```bash
-   git clone https://gitlab.com/brayantcw/brayantcw.git
+   git clone https://github.com/brayantcw/brayantcw.git
    cd brayantcw
    ```
 
@@ -67,7 +67,7 @@ The generated site will be in the `public/` directory.
 ## 📁 Project Structure
 
 ```
-├── .gitlab-ci.yml          # GitLab CI/CD configuration
+├── .github/workflows/hugo.yml  # GitHub Actions workflow
 ├── .gitignore              # Git ignore rules
 ├── config.yaml             # Hugo configuration
 ├── content/                # Content directory
@@ -97,11 +97,11 @@ The PaperMod theme includes:
 
 ## 🚀 Deployment
 
-The blog is automatically deployed to GitLab Pages using GitLab CI/CD:
+The blog is automatically deployed to GitHub Pages using GitHub Actions:
 
 - **Production**: Pushes to `main` branch trigger deployment
-- **Testing**: Other branches run build tests without deployment
-- **URL**: https://brayantcw.gitlab.io/brayantcw
+- **Testing**: Pull requests run build tests without deployment
+- **URL**: https://brayantcw.github.io/brayantcw
 
 ### Manual Deployment
 
@@ -115,7 +115,7 @@ To deploy manually:
 - **GitHub**: [@brayantcw](https://github.com/brayantcw)
 - **LinkedIn**: [Brayant Torres](https://linkedin.com/in/brayant-torres)
 - **Twitter**: [@brayantcw](https://twitter.com/brayantcw)
-- **Blog**: [brayantcw.gitlab.io/brayantcw](https://brayantcw.gitlab.io/brayantcw)
+- **Blog**: [brayantcw.github.io/brayantcw](https://brayantcw.github.io/brayantcw)
 
 ## 📄 License
 

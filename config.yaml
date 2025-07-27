@@ -1,4 +1,4 @@
-baseURL: 'https://brayantcw.gitlab.io/brayantcw'
+baseURL: 'https://brayantcw.github.io/brayantcw'
 languageCode: 'en-us'
 title: 'Brayant Torres - Tech Blog'
 theme: 'PaperMod'
@@ -74,7 +74,7 @@ params:
     hiddenInSingle: true
 
   editPost:
-    URL: "https://gitlab.com/brayantcw/brayantcw/-/edit/main/content"
+    URL: "https://github.com/brayantcw/brayantcw/edit/main/content"
     Text: "Suggest Changes"
     appendFilePath: true
 
