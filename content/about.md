@@ -1,9 +1,9 @@
 ---
 title: "About Me"
-date: 2025-07-27T12:00:00-00:00
+date: 2025-07-26T12:00:00-00:00
 draft: false
 author: "Brayant Torres"
-description: "Learn more about Brayant Torres - Software Engineer and Tech Enthusiast"
+description: "Learn more about Brayant Torres - AI Engineer and Machine Learning Specialist"
 hidemeta: false
 comments: false
 disableHLJS: false
@@ -18,94 +18,105 @@ ShowWordCount: true
 
 # About Brayant Torres
 
-## Hello! 👨‍💻
+## Hello! 🤖
 
-I'm **Brayant Torres**, a passionate software engineer dedicated to building innovative solutions and sharing knowledge with the tech community. Welcome to my personal blog where I document my journey, share insights, and explore the ever-evolving world of technology.
+I'm **Brayant Torres**, a passionate AI Engineer dedicated to building intelligent systems and advancing the field of artificial intelligence. Welcome to my blog where I share insights, research, and practical knowledge about AI engineering, machine learning, and the future of intelligent systems.
 
 ## Professional Journey
 
 ### Current Focus
-- **Software Engineering**: Designing and implementing scalable software solutions
-- **Full-Stack Development**: Building end-to-end applications with modern technologies
-- **DevOps & Cloud**: Implementing efficient deployment pipelines and cloud architectures
-- **Tech Leadership**: Mentoring developers and driving technical decisions
+- **AI Engineering**: Designing and implementing scalable AI systems and pipelines
+- **Machine Learning**: Building and deploying ML models for real-world applications
+- **Deep Learning**: Developing neural networks for computer vision, NLP, and beyond
+- **MLOps**: Creating robust infrastructure for ML model deployment and monitoring
+- **AI Research**: Exploring cutting-edge techniques and contributing to the AI community
 
 ### Skills & Technologies
 
+**AI & Machine Learning:**
+- Deep Learning (TensorFlow, PyTorch, Keras)
+- Computer Vision (OpenCV, YOLO, CNNs)
+- Natural Language Processing (Transformers, BERT, GPT)
+- Reinforcement Learning
+- MLOps & Model Deployment
+
 **Programming Languages:**
-- JavaScript/TypeScript
-- Python
-- Go
-- Java
+- Python (NumPy, Pandas, Scikit-learn)
+- R
 - SQL
+- JavaScript/TypeScript
+- CUDA/C++
 
-**Frontend Development:**
-- React.js & Next.js
-- Vue.js & Nuxt.js
-- HTML5, CSS3, SASS
-- Responsive Design
-- Progressive Web Apps
-
-**Backend Development:**
-- Node.js & Express
-- Django & FastAPI
-- RESTful APIs & GraphQL
-- Microservices Architecture
-- Database Design
-
-**DevOps & Cloud:**
+**Cloud & Infrastructure:**
+- AWS (SageMaker, EC2, S3, Lambda)
+- Google Cloud Platform (AI Platform, BigQuery)
+- Azure Machine Learning
 - Docker & Kubernetes
-- AWS, Azure, GCP
-- CI/CD Pipelines
-- Infrastructure as Code
-- Monitoring & Logging
+- Apache Spark
 
-**Tools & Platforms:**
-- Git & GitHub/GitLab
-- Linux/Unix Systems
-- PostgreSQL, MongoDB, Redis
-- Elasticsearch
-- Apache Kafka
+**Data & Analytics:**
+- Data Engineering & ETL
+- Statistical Analysis
+- A/B Testing & Experimentation
+- Big Data Processing
+- Data Visualization (Matplotlib, Plotly, Tableau)
+
+**AI Frameworks & Tools:**
+- Hugging Face Transformers
+- LangChain & LlamaIndex
+- Weights & Biases (W&B)
+- MLflow
+- Apache Airflow
+- Jupyter Notebooks
 
 ## Philosophy
 
 I believe in:
 
-- **Continuous Learning**: Technology evolves rapidly, and staying curious is key
-- **Clean Code**: Writing maintainable, readable, and efficient code
-- **Collaboration**: Great software is built by great teams
-- **Open Source**: Contributing back to the community that has given so much
-- **Knowledge Sharing**: Teaching and learning from others in the community
+- **Responsible AI**: Building ethical and unbiased AI systems that benefit humanity
+- **Continuous Innovation**: Staying at the forefront of AI research and development
+- **Open Science**: Sharing knowledge and contributing to the open-source AI community
+- **Practical Impact**: Bridging the gap between research and real-world applications
+- **Lifelong Learning**: The AI field evolves rapidly, and staying curious is essential
 
-## When I'm Not Coding
+## Research Interests
+
+- **Large Language Models**: Fine-tuning and optimizing LLMs for specific domains
+- **Computer Vision**: Object detection, image segmentation, and generative models
+- **AI Safety**: Ensuring AI systems are safe, reliable, and aligned with human values
+- **Edge AI**: Deploying AI models on edge devices and mobile platforms
+- **Multimodal AI**: Systems that can understand and generate across multiple modalities
+
+## When I'm Not Building AI
 
 Outside of work, you'll find me:
 
-- **Contributing to Open Source**: Working on projects that make a difference
-- **Learning New Technologies**: Currently exploring Rust and Machine Learning
-- **Gaming**: Enjoying strategy games and indie titles
-- **Reading**: Technical books, sci-fi novels, and industry blogs
-- **Exploring**: Hiking and discovering new places
+- **Reading AI Papers**: Staying updated with the latest research from arXiv and conferences
+- **Contributing to Open Source**: Working on AI/ML projects that benefit the community
+- **Experimenting**: Building side projects with new AI techniques and models
+- **Learning**: Taking online courses and attending AI conferences and workshops
+- **Teaching**: Mentoring aspiring AI engineers and sharing knowledge through this blog
 
 ## Let's Connect
 
-I'm always interested in connecting with fellow developers, sharing ideas, and collaborating on interesting projects. Feel free to reach out!
+I'm always interested in connecting with fellow AI researchers, engineers, and enthusiasts. Let's discuss the latest in AI, collaborate on projects, or share ideas about the future of intelligent systems!
 
 - **Email**: [your.email@example.com](mailto:your.email@example.com)
 - **GitHub**: [@brayantcw](https://github.com/brayantcw)
-- **LinkedIn**: [Brayant Torres](https://linkedin.com/in/brayant-torres)
+- **LinkedIn**: [Brayant Torres](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
 - **Twitter**: [@brayantcw](https://twitter.com/brayantcw)
 
 ## This Blog
 
-This blog serves as my digital notebook where I:
+This AI engineering blog serves as my platform to:
 
-- Share technical tutorials and guides
-- Document solutions to interesting problems
-- Review and analyze new technologies
-- Discuss software engineering best practices
-- Showcase personal projects and experiments
+- Share practical AI/ML tutorials and implementation guides
+- Discuss the latest research papers and their implications
+- Review new AI tools, frameworks, and technologies
+- Explore AI engineering best practices and design patterns
+- Document my journey building production AI systems
+- Address challenges in AI deployment and scaling
 
-Whether you're a seasoned developer or just starting your coding journey, I hope you find something valuable here. Feel free to leave comments, ask questions, or suggest topics you'd like me to cover.
+Whether you're an experienced AI practitioner, a student entering the field, or someone curious about artificial intelligence, I hope you find valuable insights here. Feel free to engage with the content, ask questions, or suggest topics you'd like me to explore.
 
-Thanks for visiting, and happy coding! 🚀
+Thanks for visiting, and let's shape the future of AI together! 🚀🤖

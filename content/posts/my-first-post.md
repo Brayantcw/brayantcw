@@ -1,11 +1,11 @@
 ---
-title: "Welcome to My Tech Blog"
+title: "Welcome to My AI Engineering Blog"
 date: 2025-07-26T12:00:00-00:00
 draft: false
-tags: ["welcome", "introduction", "tech", "programming"]
+tags: ["welcome", "introduction", "ai", "machine-learning", "deep-learning"]
 categories: ["general"]
 author: "Brayant Torres"
-description: "My first blog post introducing myself and what this blog is about"
+description: "My first blog post introducing myself and what this AI engineering blog is about"
 cover:
     image: "<image path/url>"
     alt: "<alt text>"
@@ -28,81 +28,137 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 editPost:
-    URL: "https://gitlab.com/brayantcw/brayantcw/-/edit/main/content"
+    URL: "https://github.com/brayantcw/brayantcw/edit/main/content"
     Text: "Suggest Changes"
     appendFilePath: true
 ---
 
-# Welcome to My Tech Blog! 👋
+# Welcome to My AI Engineering Blog! 🤖
 
-Hello there! I'm **Brayant Torres**, a passionate software engineer and technology enthusiast. Welcome to my corner of the internet where I share my thoughts, experiences, and learnings in the world of software development.
+Hello there! I'm **Brayant Torres**, a passionate AI Engineer dedicated to building intelligent systems and pushing the boundaries of artificial intelligence. Welcome to my corner of the internet where I share insights, research, and practical knowledge about AI engineering, machine learning, and the fascinating world of intelligent systems.
 
 ## What You'll Find Here
 
-This blog is my digital space to explore and share:
+This blog is my platform to explore and share the cutting-edge world of AI:
 
-- **Programming Tutorials**: Step-by-step guides on various programming languages and frameworks
-- **Software Engineering Best Practices**: Lessons learned from building and maintaining software systems
-- **Technology Trends**: My thoughts on emerging technologies and industry developments
-- **Project Showcases**: Deep dives into interesting projects I've worked on
-- **Career Insights**: Tips and experiences from my journey as a software engineer
+- **AI Engineering Tutorials**: Practical guides on building, deploying, and scaling AI systems
+- **Machine Learning Deep Dives**: From foundational concepts to advanced techniques
+- **Research Paper Reviews**: Breaking down the latest AI research and its implications
+- **MLOps & Infrastructure**: Best practices for productionizing ML models
+- **AI Tools & Frameworks**: Reviews and comparisons of the latest AI technologies
+- **Industry Insights**: Trends, challenges, and opportunities in the AI landscape
 
-## My Background
+## My AI Journey
 
-I'm a software engineer with experience in:
+I'm an AI engineer with expertise across the full AI/ML lifecycle:
 
-- **Backend Development**: Building scalable APIs and microservices
-- **Frontend Technologies**: Creating responsive and user-friendly interfaces
-- **DevOps Practices**: Implementing CI/CD pipelines and infrastructure automation
-- **Cloud Platforms**: Working with AWS, Azure, and other cloud providers
+- **Deep Learning**: Building neural networks for computer vision, NLP, and beyond
+- **MLOps**: Creating robust pipelines for model deployment and monitoring
+- **Cloud AI**: Leveraging AWS, GCP, and Azure for scalable AI solutions
+- **Research**: Staying at the forefront of AI innovations and contributing to the field
 
-```javascript
-// A little bit about me in code
-const brayant = {
-  role: "Software Engineer",
-  languages: ["JavaScript", "Python", "Go", "TypeScript"],
-  technologies: {
-    frontend: ["React", "Vue.js", "HTML5", "CSS3"],
-    backend: ["Node.js", "Django", "FastAPI", "Express"],
-    databases: ["PostgreSQL", "MongoDB", "Redis"],
-    cloud: ["AWS", "Docker", "Kubernetes"]
-  },
-  currentlyLearning: ["Rust", "Machine Learning", "System Design"],
-  hobbies: ["Open Source", "Tech Blogging", "Gaming"]
-};
+```python
+# A little bit about me in code
+class AIEngineer:
+    def __init__(self):
+        self.name = "Brayant Torres"
+        self.role = "AI Engineer"
+        self.expertise = {
+            "deep_learning": ["PyTorch", "TensorFlow", "Keras"],
+            "ml_frameworks": ["Scikit-learn", "XGBoost", "LightGBM"],
+            "nlp": ["Transformers", "BERT", "GPT", "LangChain"],
+            "computer_vision": ["OpenCV", "YOLO", "CNNs", "GANs"],
+            "mlops": ["MLflow", "Weights & Biases", "Kubeflow"],
+            "cloud": ["AWS SageMaker", "GCP AI Platform", "Azure ML"],
+            "languages": ["Python", "R", "SQL", "CUDA"]
+        }
+        self.currently_exploring = [
+            "Large Language Models",
+            "Multimodal AI",
+            "Edge AI Deployment",
+            "AI Safety & Ethics"
+        ]
+        
+    def mission(self):
+        return "Building AI systems that make a positive impact on the world"
 
-console.log("Welcome to my blog!", brayant);
+ai_engineer = AIEngineer()
+print(f"Welcome to {ai_engineer.name}'s AI Engineering Blog!")
+print(f"Mission: {ai_engineer.mission()}")
 ```
 
 ## What to Expect
 
-I'll be sharing content regularly, covering topics like:
+I'll be sharing content regularly across these exciting areas:
 
-1. **Code Reviews**: Analyzing interesting code patterns and architectures
-2. **Tutorial Series**: In-depth guides on building real-world applications
-3. **Tech Stack Deep Dives**: Exploring different technologies and their use cases
-4. **Problem Solving**: Breaking down complex technical challenges
-5. **Industry Insights**: Thoughts on software development trends and practices
+### 🧠 **Deep Learning & Neural Networks**
+- Architecture design patterns and best practices
+- Training optimization techniques
+- Model compression and efficiency
+
+### 🔬 **AI Research & Innovation**
+- Latest paper reviews and implementations
+- Experimental results and insights
+- Open-source contributions
+
+### 🛠️ **MLOps & Production AI**
+- End-to-end ML pipeline design
+- Model deployment strategies
+- Monitoring and maintenance
+
+### 📊 **Data Science & Analytics**
+- Advanced statistical techniques
+- Feature engineering strategies
+- Experimental design and A/B testing
+
+### 🌐 **AI Applications**
+- Computer vision projects
+- Natural language processing
+- Recommendation systems
+- Time series forecasting
+
+## Current Focus Areas
+
+I'm particularly excited about these emerging areas in AI:
+
+- **🤖 Large Language Models**: Fine-tuning and optimizing LLMs for specific domains
+- **👁️ Computer Vision**: Object detection, segmentation, and generative models
+- **🔄 Reinforcement Learning**: Building agents that learn through interaction
+- **⚡ Edge AI**: Deploying models on mobile and IoT devices
+- **🛡️ AI Safety**: Ensuring AI systems are reliable, fair, and beneficial
 
 ## Let's Connect!
 
-I'm always excited to connect with fellow developers and tech enthusiasts. Feel free to reach out:
+I'm always excited to connect with fellow AI practitioners, researchers, and enthusiasts:
 
-- **GitHub**: [@brayantcw](https://github.com/brayantcw)
-- **LinkedIn**: [Brayant Torres](https://linkedin.com/in/brayant-torres)
-- **Twitter**: [@brayantcw](https://twitter.com/brayantcw)
+- **GitHub**: [@brayantcw](https://github.com/brayantcw) - Check out my AI projects and contributions
+- **LinkedIn**: [Brayant Torres](https://www.linkedin.com/in/brayan-torres-re7a9839137/) - Let's network professionally
+- **Twitter**: [@brayantcw](https://twitter.com/brayantcw) - Follow for AI insights and updates
 
-## Stay Tuned
+## Upcoming Content
 
-This is just the beginning! I have exciting content planned, including:
+Here's what I'm planning to share in the coming weeks:
 
-- A series on building modern web applications
-- DevOps automation tutorials
-- Code architecture best practices
-- Personal project showcases
+1. **"Building Your First Neural Network with PyTorch"** - A hands-on tutorial
+2. **"MLOps Pipeline Design Patterns"** - Best practices for production ML
+3. **"Computer Vision for Beginners"** - From basics to advanced techniques
+4. **"LLM Fine-tuning Guide"** - Customizing language models for your domain
+5. **"AI Ethics in Practice"** - Responsible AI development
 
-Thank you for stopping by, and I hope you find the content here valuable. Happy coding! 🚀
+## Join the Journey
+
+Whether you're:
+- 🎓 A student learning AI/ML fundamentals
+- 👨‍💻 A software engineer transitioning to AI
+- 🔬 A researcher exploring new frontiers
+- 🏢 A professional implementing AI solutions
+
+...there's something here for you!
+
+Thank you for joining me on this exciting journey through the world of artificial intelligence. Together, let's explore the technologies that are reshaping our world and build AI systems that make a positive impact.
+
+Happy learning, and welcome to the future of AI! 🚀🤖
 
 ---
 
-*Have questions or suggestions? Feel free to leave a comment or reach out through any of the social links above. I'd love to hear from you!*
+*Have questions about AI, want to discuss a paper, or have suggestions for future posts? Feel free to reach out through any of the channels above. I'd love to hear from you and learn about your AI journey too!*

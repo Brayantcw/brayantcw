@@ -1,10 +1,10 @@
-# Brayant Torres - Tech Blog
+# Brayant Torres - AI Engineering Blog
 
-A modern tech blog built with Hugo and the PaperMod theme, hosted on GitHub Pages.
+A modern AI engineering blog built with Hugo and the PaperMod theme, hosted on GitHub Pages.
 
 ## 🚀 About
 
-This is my personal tech blog where I share insights about software development, programming tutorials, and technology trends. Built with Hugo for speed and simplicity, styled with the beautiful PaperMod theme.
+This is my personal AI engineering blog where I share insights about artificial intelligence, machine learning, deep learning, and cutting-edge AI technologies. Built with Hugo for speed and simplicity, styled with the beautiful PaperMod theme.
 
 ## 🛠️ Tech Stack
 
@@ -15,11 +15,12 @@ This is my personal tech blog where I share insights about software development,
 
 ## 📝 Blog Topics
 
-- Programming tutorials and guides
-- Software engineering best practices
-- Technology reviews and analysis
-- Project showcases and case studies
-- Career insights and experiences
+- AI engineering tutorials and guides
+- Machine learning and deep learning techniques
+- MLOps and production AI systems
+- AI research paper reviews and analysis
+- Computer vision and NLP projects
+- AI tools and frameworks comparisons
 
 ## 🏗️ Development
 
@@ -113,7 +114,7 @@ To deploy manually:
 ## 📞 Contact
 
 - **GitHub**: [@brayantcw](https://github.com/brayantcw)
-- **LinkedIn**: [Brayant Torres](https://linkedin.com/in/brayant-torres)
+- **LinkedIn**: [Brayant Torres](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
 - **Twitter**: [@brayantcw](https://twitter.com/brayantcw)
 - **Blog**: [brayantcw.github.io/brayantcw](https://brayantcw.github.io/brayantcw)
 

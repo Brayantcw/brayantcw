@@ -1,13 +1,13 @@
 baseURL: 'https://brayantcw.github.io/brayantcw'
 languageCode: 'en-us'
-title: 'Brayant Torres - Tech Blog'
+title: 'Brayant Torres - AI Engineering Blog'
 theme: 'PaperMod'
 
 params:
   env: production
   title: "Brayant Torres"
-  description: "Software Engineer & Tech Enthusiast"
-  keywords: [Blog, Portfolio, PaperMod]
+  description: "AI Engineer & Machine Learning Specialist"
+  keywords: [AI, Machine Learning, Deep Learning, Engineering, Blog]
   author: "Brayant Torres"
   DateFormat: "January 2, 2006"
   defaultTheme: auto
@@ -46,7 +46,7 @@ params:
   profileMode:
     enabled: false
     title: "Brayant Torres"
-    subtitle: "Software Engineer & Tech Enthusiast"
+    subtitle: "AI Engineer & Machine Learning Specialist"
     imageUrl: "<image link>"
     imageWidth: 120
     imageHeight: 120
@@ -54,13 +54,13 @@ params:
 
   homeInfoParams:
     Title: "Hi there! 👋"
-    Content: "Welcome to my tech blog where I share insights about software development, programming tutorials, and technology trends."
+    Content: "Welcome to my AI engineering blog where I share insights about machine learning, deep learning, AI systems, and cutting-edge AI technologies."
 
   socialIcons:
     - name: github
       url: "https://github.com/brayantcw"
     - name: linkedin
-      url: "https://linkedin.com/in/brayant-torres"
+      url: "https://www.linkedin.com/in/brayan-torres-re7a9839137/"
     - name: twitter
       url: "https://twitter.com/brayantcw"
 
