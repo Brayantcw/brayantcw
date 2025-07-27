@@ -1,6 +1,6 @@
 ---
 title: "Welcome to My Tech Blog"
-date: 2025-07-27T12:00:00-00:00
+date: 2025-07-26T12:00:00-00:00
 draft: false
 tags: ["welcome", "introduction", "tech", "programming"]
 categories: ["general"]
