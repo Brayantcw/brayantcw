@@ -44,9 +44,15 @@ In this blog, we'll explore the architecture behind AI agents, implement a simpl
 
 AI agents represent a paradigm shift in building intelligent workflows. Their architecture is fairly simple, you need the agent itself (a running simple piece of code), a large language model for reasoning capabilities, and a toolkit of external functions the agent can invoke to execute instructions. **Spoiler Alert**, the Model Control Protocol (MCP) is the critical piece tying all these components together.
 
+![AI Agent Architecture](images/Agent%20Architecture.png)
+*High-level AI agent architecture showing the interaction between human, agent, LLM, and tools*
+
 ## Agent Anatomy 101
 
 Building an effective AI agent requires understanding four core components. Let's examine each using Google ADK as our implementation framework:
+
+![Agent Anatomy](images/anatomy.png)
+*The four core components of an AI agent: Instructions, Intelligence, Memory, and Tools*
 
 **Instructions** define your agent's behavior and interaction patterns. These are basically the agent's "personality" and operational guidelines, injected as part of the system prompt on every request. Rather than rewriting entire agent logic every single time, and maintaining well-structured, modular instructions, there are sort of versioned configuration files that can be updated independently as requirements evolve.
 
@@ -105,6 +111,9 @@ async def create_butter_agent():
 ## Real Agent Implementation
 
 Now the real fun begins: in this post, we'll build a hands-on example using an MCP server and Google ADK. The architecture is straightforward, in this scenario, we'll create a dedicated support agent for Kubernetes.
+
+![Kubernetes Agent Architecture](images/prerequisites.png)
+*Architecture of our Kubernetes support agent using MCP to communicate with the cluster*
 
 ### Prerequisites
 
@@ -203,9 +212,18 @@ INFO: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 
 You can now pose straightforward queries to your cluster without having to implement any Kubernetes specific logic. Before MCP, you'd typically write custom Python functions or wrapper scripts around `kubectl`.
 
+![Agent Query Example](images/question1.png)
+*Example of the agent responding to a simple cluster query about namespaces*
+
 You can also leverage the agent for in-depth troubleshooting and cluster modifications. In this example, let's examine a simple (but surprisingly common Kubernetes issue) and see if the agent can pinpoint the problem and recommend solutions. The agent did exactly what any support engineer would, asking for more details: "Where is your app deployed? What's its behavior? Have you made any recent changes?" We played the typical user card: clueless and just wanting it fixed.
 
+![Troubleshooting Conversation](images/question2.png)
+*The agent gathering information about the issue like a real support engineer*
+
 The agent executed a command to identify non-running applications in the namespace. After pinpointing the issue, it proposed a solution, applied it, and then ran a follow-up command to confirm the problem was resolved.
+
+![Problem Resolution](images/question3.png)
+*The agent identifying the issue, applying a fix, and confirming the resolution*
 
 ## The Agent Runs, Now What?
 
