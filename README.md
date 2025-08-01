@@ -1,136 +1,110 @@
-# Brayant Torres - AI Engineering Blog
+# Hi there, I'm Brayan Torres 👋
 
-A modern AI engineering blog built with Hugo and the PaperMod theme, hosted on GitHub Pages.
+**Platform Infrastructure Engineer @ Roche | Cloud Architect | Kubestronaut**
 
-## 🚀 About
+I'm a passionate cloud architect and platform engineer with 4+ years of experience building scalable, secure infrastructure solutions. Currently engineering Kubernetes-based platforms at Roche that support 100+ enterprise applications on AWS.
 
-This is my personal AI engineering blog where I share insights about artificial intelligence, machine learning, deep learning, and cutting-edge AI technologies. Built with Hugo for speed and simplicity, styled with the beautiful PaperMod theme.
+## 🚀 About Me
 
-## 🛠️ Tech Stack
+- 🔭 Currently working on **scalable Kubernetes platforms** and **cloud-native architectures** 
+- 🌱 Pursuing **Master's in Big Data & Data Engineering** at Universidad Complutense Madrid
+- ✍️ Writing about **AI engineering, cloud infrastructure, and platform engineering** on my [blog](https://brayantcw.github.io/brayantcw)
+- 🎯 **Kubestronaut** certified (CKA, CKAD) and **AWS DevOps Engineer**
+- 🌍 Based in **Madrid, Spain**
+- 💬 Ask me about **Kubernetes, AWS, Terraform, GitOps, and platform engineering**
 
-- **Static Site Generator**: [Hugo](https://gohugo.io/)
-- **Theme**: [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
-- **Hosting**: GitHub Pages
-- **CI/CD**: GitHub Actions
+## 🛠️ Tech Stack & Expertise
 
-## 📝 Blog Topics
+### Cloud & Infrastructure
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=flat&logo=terraform&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat&logo=argo&logoColor=white)
 
-- AI engineering tutorials and guides
-- Machine learning and deep learning techniques
-- MLOps and production AI systems
-- AI research paper reviews and analysis
-- Computer vision and NLP projects
-- AI tools and frameworks comparisons
+### Monitoring & Observability
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
 
-## 🏗️ Development
+### Programming & Automation
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D4?style=flat&logo=azure-devops&logoColor=white)
 
-### Prerequisites
+## 💼 Professional Experience
 
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) (v0.146.0+)
-- [Git](https://git-scm.com/)
+### 🏢 **Platform Infrastructure Engineer** @ Roche (Aug 2024 - Present)
+- Engineering scalable Kubernetes-based platforms supporting **100+ cloud-native enterprise applications** on AWS
+- Leading platform security strategy from secure CI/CD practices to runtime hardening
+- Developed infrastructure modules and GitOps workflows using **Terraform** and **ArgoCD**
+- Implemented observability stack with **Prometheus, Grafana, and Sysdig**
 
-### Local Development
+### ☁️ **Cloud Architect** @ Amazon Web Services (Nov 2021 - Jul 2024) 
+- Managed cross-functional teams designing **enterprise-grade microservice applications**
+- Orchestrated architectural blueprints for enterprise-level cloud infrastructure
+- Championed CI/CD pipeline development, achieving **70+ improvement** in time-to-market
+- Led cloud infrastructure design encompassing network topology, security frameworks, and system integration
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/brayantcw/brayantcw.git
-   cd brayantcw
-   ```
+### 📈 **Business Manager Cloud** @ TD Synnex (Feb 2021 - Nov 2021)
+- Designed cloud infrastructure architectures for **100+ startups and SMEs**
+- Expanded sales pipeline by **$1M+ USD** through strategic cloud adoption initiatives
+- Certified **30+ partners** in Azure and AWS cloud technologies
 
-2. Initialize and update the theme submodule:
-   ```bash
-   git submodule update --init --recursive
-   ```
+## 🏆 Certifications
 
-3. Start the development server:
-   ```bash
-   hugo server -D
-   ```
+### Kubernetes
+- 🚀 **Kubestronaut** (Sep 2024)
+- ⚙️ **Certified Kubernetes Administrator (CKA)** (Aug 2023)
+- 🔧 **Certified Kubernetes Application Developer (CKAD)** (Mar 2023)
 
-4. Open your browser and visit `http://localhost:1313`
+### AWS
+- 🛠️ **AWS Certified DevOps Engineer** (Aug 2022)
+- 🖥️ **AWS Certified SysOps Administrator** (Nov 2022)  
+- 💻 **AWS Certified Developer** (Dec 2021)
+- 🏗️ **AWS Certified Solutions Architect** (Sep 2020)
 
-### Creating New Posts
+## 📚 Education
 
-Create a new blog post:
-```bash
-hugo new posts/my-new-post.md
-```
+**Master's in Big Data & Data Engineering** - Universidad Complutense Madrid (2024 - Present)  
+**Bachelor of Electronic Engineering** - Universidad de los Andes, Colombia (2016 - 2020)
 
-### Building for Production
+## 📝 Blog & Writing
 
-Build the static site:
-```bash
-hugo --minify
-```
+I write about **AI engineering, cloud infrastructure, and platform engineering** on my technical blog. Topics include:
 
-The generated site will be in the `public/` directory.
+- 🤖 **AI Engineering**: MLOps, production AI systems, and AI tools comparisons
+- ☁️ **Cloud Architecture**: AWS patterns, serverless architectures, and cost optimization  
+- 🔧 **Platform Engineering**: Kubernetes best practices, GitOps workflows, and infrastructure as code
+- 🛡️ **DevSecOps**: Security in CI/CD, runtime hardening, and compliance frameworks
 
-## 📁 Project Structure
+**Visit my blog**: [brayantcw.github.io/brayantcw](https://brayantcw.github.io/brayantcw)
 
-```
-├── .github/workflows/hugo.yml  # GitHub Actions workflow
-├── .gitignore              # Git ignore rules
-├── config.yaml             # Hugo configuration
-├── content/                # Content directory
-│   ├── posts/              # Blog posts
-│   ├── about.md            # About page
-│   └── search.md           # Search page
-├── static/                 # Static assets
-│   └── images/             # Images
-├── themes/                 # Hugo themes
-│   └── PaperMod/           # PaperMod theme (git submodule)
-└── README.md               # This file
-```
+## 🎯 What I'm Currently Working On
 
-## 🎨 Theme Features
+- 🔬 **Research**: Advanced Kubernetes scheduling and resource optimization
+- 📊 **Learning**: Big Data processing frameworks and Data Engineering patterns  
+- 🏗️ **Building**: Open-source platform engineering tools and templates
+- 👥 **Mentoring**: AWS Tech U program and Computer Science tutoring
 
-The PaperMod theme includes:
+## 📊 GitHub Stats
 
-- ⚡ Fast and lightweight
-- 🌓 Light/Dark mode toggle
-- 📱 Fully responsive design
-- 🔍 Built-in search functionality
-- 📊 Reading time and word count
-- 🏷️ Tags and categories support
-- 📱 Social media share buttons
-- 💬 Comments support (configurable)
-- 🎯 SEO optimized
+![Brayan's GitHub stats](https://github-readme-stats.vercel.app/api?username=brayantcw&show_icons=true&theme=dark&count_private=true)
 
-## 🚀 Deployment
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=brayantcw&layout=compact&theme=dark)
 
-The blog is automatically deployed to GitHub Pages using GitHub Actions:
+## 🤝 Let's Connect
 
-- **Production**: Pushes to `main` branch trigger deployment
-- **Testing**: Pull requests run build tests without deployment
-- **URL**: https://brayantcw.github.io/brayantcw
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brayantcw)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brayantcwork@gmail.com)
+[![Blog](https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://brayantcw.github.io/brayantcw)
+[![Credily](https://img.shields.io/badge/Credily-00D4FF?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/brayan-torres)
 
-### Manual Deployment
-
-To deploy manually:
-
-1. Build the site: `hugo --minify`
-2. The `public/` directory contains the deployable files
-
-## 📞 Contact
-
-- **GitHub**: [@brayantcw](https://github.com/brayantcw)
-- **LinkedIn**: [Brayant Torres](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
-- **Twitter**: [@brayantcw](https://twitter.com/brayantcw)
-- **Blog**: [brayantcw.github.io/brayantcw](https://brayantcw.github.io/brayantcw)
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-While this is a personal blog, I welcome suggestions and improvements:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a merge request
+📍 **Madrid, Spain** | 📱 **+34 652 020 971**
 
 ---
 
-Built with ❤️ by Brayant Torres
+⭐ **Open to collaborations on cloud infrastructure, platform engineering, and AI/ML projects**  
+💬 **Available for mentoring in Kubernetes, AWS, and career development**
+
+*Built with ❤️ and lots of ☕*
