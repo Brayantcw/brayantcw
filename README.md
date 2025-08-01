@@ -58,10 +58,16 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 - 🔧 **Certified Kubernetes Application Developer (CKAD)** (Mar 2023)
 
 ### AWS
+- 🤖 **AWS Certified Machine Learning Engineer – Associate** (May 2025)
+- 🧠 **AWS Certified AI Practitioner** (Apr 2025)
+- 📊 **AWS Certified Data Engineer – Associate** (May 2024)
 - 🛠️ **AWS Certified DevOps Engineer** (Aug 2022)
 - 🖥️ **AWS Certified SysOps Administrator** (Nov 2022)  
 - 💻 **AWS Certified Developer** (Dec 2021)
 - 🏗️ **AWS Certified Solutions Architect** (Sep 2020)
+
+### HashiCorp
+- 🏗️ **HashiCorp Certified: Terraform Associate (003)** (Feb 2024)
 
 ## 📚 Education
 
@@ -81,9 +87,10 @@ I write about **AI engineering, cloud infrastructure, and platform engineering**
 
 ## 🎯 What I'm Currently Working On
 
+- 🤖 **AI Engineering**: Building RAG (Retrieval-Augmented Generation) systems and AI agents
 - 🔬 **Research**: Advanced Kubernetes scheduling and resource optimization
 - 📊 **Learning**: Big Data processing frameworks and Data Engineering patterns  
-- 🏗️ **Building**: Open-source platform engineering tools and templates
+- 🏗️ **Building**: Open-source platform engineering tools and AI-powered automation
 - 👥 **Mentoring**: AWS Tech U program and Computer Science tutoring
 
 ## 📊 GitHub Stats
