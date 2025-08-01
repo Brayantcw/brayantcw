@@ -2,7 +2,7 @@
 
 **Platform Infrastructure Engineer @ Roche | Cloud Architect | Kubestronaut**
 
-I'm a passionate cloud architect and platform engineer with 4+ years of experience building scalable, secure infrastructure solutions. Currently engineering Kubernetes-based platforms at Roche that support 100+ enterprise applications on AWS.
+I'm a passionate cloud architect and platform engineer with 5+ years of experience building scalable, secure infrastructure solutions. Currently engineering Kubernetes-based platforms at Roche that support 100+ enterprise applications on AWS.
 
 ## 🚀 About Me
 
