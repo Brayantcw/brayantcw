@@ -4,16 +4,16 @@
 
 I'm a passionate cloud architect and platform engineer with 5+ years of experience building scalable, secure infrastructure solutions. Currently engineering Kubernetes-based platforms at Roche that support 100+ enterprise applications on AWS.
 
-## 🚀 About Me
+## About Me
 
-- 🔭 Currently working on **scalable Kubernetes platforms** and **cloud-native architectures** 
-- 🌱 Pursuing **Master's in Big Data & Data Engineering** at Universidad Complutense Madrid
-- ✍️ Writing about **AI engineering, cloud infrastructure, and platform engineering** on my [blog](https://brayantcw.github.io/brayantcw)
-- 🎯 **Kubestronaut** certified (CKA, CKAD) and **AWS DevOps Engineer**
-- 🌍 Based in **Madrid, Spain**
-- 💬 Ask me about **Kubernetes, AWS, Terraform, GitOps, and platform engineering**
+-  Currently working on **scalable Kubernetes platforms** and **cloud-native architectures** 
+-  Pursuing **Master's in Big Data & Data Engineering** at Universidad Complutense Madrid
+-  Writing about **AI engineering, cloud infrastructure, and platform engineering** on my [blog](https://brayantcw.github.io/brayantcw)
+-  **Kubestronaut** certified (CKA, CKAD) and **AWS DevOps Engineer**
+-  Based in **Madrid, Spain**
+-  Ask me about **Kubernetes, AWS, Terraform, GitOps, and platform engineering**
 
-## 🛠️ Tech Stack & Expertise
+##  Tech Stack & Expertise
 
 ### Cloud & Infrastructure
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
@@ -31,7 +31,7 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
 ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D4?style=flat&logo=azure-devops&logoColor=white)
 
-## 💼 Professional Experience
+## Professional Experience
 
 ### 🏢 **Platform Infrastructure Engineer** @ Roche (Aug 2024 - Present)
 - Engineering scalable Kubernetes-based platforms supporting **100+ cloud-native enterprise applications** on AWS
@@ -125,35 +125,35 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 
 ## 📚 Education
 
-**Master's in Big Data & Data Engineering** - Universidad Complutense Madrid (2024 - Present)  
+**Master's in Big Data & Data Engineering** - Universidad Complutense Madrid (2024 - 2025)  
 **Bachelor of Electronic Engineering** - Universidad de los Andes, Colombia (2016 - 2020)
 
-## 📝 Blog & Writing
+## Blog & Writing
 
 I write about **AI engineering, cloud infrastructure, and platform engineering** on my technical blog. Topics include:
 
-- 🤖 **AI Engineering**: MLOps, production AI systems, and AI tools comparisons
-- ☁️ **Cloud Architecture**: AWS patterns, serverless architectures, and cost optimization  
-- 🔧 **Platform Engineering**: Kubernetes best practices, GitOps workflows, and infrastructure as code
-- 🛡️ **DevSecOps**: Security in CI/CD, runtime hardening, and compliance frameworks
+-  **AI Engineering**: MLOps, production AI systems, and AI tools comparisons
+-  **Cloud Architecture**: AWS patterns, serverless architectures, and cost optimization  
+-  **Platform Engineering**: Kubernetes best practices, GitOps workflows, and infrastructure as code
+-  **DevSecOps**: Security in CI/CD, runtime hardening, and compliance frameworks
 
 **Visit my blog**: [brayantcw.github.io/brayantcw](https://brayantcw.github.io/brayantcw)
 
-## 🎯 What I'm Currently Working On
+##  What I'm Currently Working On
 
-- 🤖 **AI Engineering**: Building RAG (Retrieval-Augmented Generation) systems and AI agents
-- 🔬 **Research**: Advanced Kubernetes scheduling and resource optimization
-- 📊 **Learning**: Big Data processing frameworks and Data Engineering patterns  
-- 🏗️ **Building**: Open-source platform engineering tools and AI-powered automation
-- 👥 **Mentoring**: AWS Tech U program and Computer Science tutoring
+-  **AI Engineering**: Building RAG (Retrieval-Augmented Generation) systems and AI agents
+-  **Research**: Advanced Kubernetes scheduling and resource optimization
+-  **Learning**: Big Data processing frameworks and Data Engineering patterns  
+-  **Building**: Open-source platform engineering tools and AI-powered automation
+-  **Mentoring**: AWS Tech U program and Computer Science tutoring
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 ![Brayan's GitHub stats](https://github-readme-stats.vercel.app/api?username=brayantcw&show_icons=true&theme=dark&count_private=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=brayantcw&layout=compact&theme=dark)
 
-## 🤝 Let's Connect
+##  Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brayantcw)
@@ -168,4 +168,3 @@ I write about **AI engineering, cloud infrastructure, and platform engineering**
 ⭐ **Open to collaborations on cloud infrastructure, platform engineering, and AI/ML projects**  
 💬 **Available for mentoring in Kubernetes, AWS, and career development**
 
-*Built with ❤️ and lots of ☕*
