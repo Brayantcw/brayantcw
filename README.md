@@ -1,4 +1,4 @@
-# Hi there, I'm Brayan Torres 👋
+# Hi there, I'm Brayan Torres 
 
 **Platform Infrastructure Engineer @ Roche | Cloud Architect | Kubestronaut**
 
@@ -39,22 +39,22 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 - Developed infrastructure modules and GitOps workflows using **Terraform** and **ArgoCD**
 - Implemented observability stack with **Prometheus, Grafana, and Sysdig**
 
-### ☁️ **Cloud Architect** @ Amazon Web Services (Nov 2021 - Jul 2024) 
+### **Cloud Architect** @ Amazon Web Services (Nov 2021 - Jul 2024) 
 - Managed cross-functional teams designing **enterprise-grade microservice applications**
 - Orchestrated architectural blueprints for enterprise-level cloud infrastructure
 - Championed CI/CD pipeline development, achieving **70+ improvement** in time-to-market
 - Led cloud infrastructure design encompassing network topology, security frameworks, and system integration
 
-### 📈 **Business Manager Cloud** @ TD Synnex (Feb 2021 - Nov 2021)
+### **Business Manager Cloud** @ TD Synnex (Feb 2021 - Nov 2021)
 - Designed cloud infrastructure architectures for **100+ startups and SMEs**
 - Expanded sales pipeline by **$1M+ USD** through strategic cloud adoption initiatives
 - Certified **30+ partners** in Azure and AWS cloud technologies
 
-## 🏆 Certifications
+##  Certifications
 
 **Total Active Certifications: 25+** | 🎯 **Kubestronaut** | ☁️ **Multi-Cloud Expert** | 🔐 **Security Focused**
 
-### ☁️ AWS Certifications (9)
+### AWS Certifications (9)
 <details>
 <summary>View All AWS Certifications</summary>
 
@@ -123,7 +123,7 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
   </a>
 </p>
 
-## 📚 Education
+## Education
 
 **Master's in Big Data & Data Engineering** - Universidad Complutense Madrid (2024 - 2025)  
 **Bachelor of Electronic Engineering** - Universidad de los Andes, Colombia (2016 - 2020)
@@ -161,7 +161,7 @@ I write about **AI engineering, cloud infrastructure, and platform engineering**
 [![Blog](https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://brayantcw.github.io/brayantcw)
 [![Credily](https://img.shields.io/badge/Credily-00D4FF?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/brayan-torres)
 
-📍 **Madrid, Spain** | 📱 **+34 652 020 971**
+**Madrid, Spain** | **+34 652 020 971**
 
 ---
 
