@@ -92,6 +92,43 @@ I believe in building systems that are not just technically sound, but also prac
 
 I maintain active certifications across major cloud platforms and continuously expand my knowledge through hands-on projects and industry best practices. The cloud landscape evolves rapidly, and staying current requires dedicated learning and practical application.
 
+### Professional Certifications
+
+#### AWS Certifications
+- **AWS Certified Machine Learning Engineer – Associate** (2025)
+- **AWS Certified AI Practitioner** (2025)
+- **AWS Certified Data Engineer – Associate** (2024)
+- **AWS Certified DevOps Engineer – Professional** (2022)
+- **AWS Certified SysOps Administrator – Associate** (2022)
+- **AWS Certified Developer – Associate** (2021)
+- **AWS Certified Solutions Architect – Associate** (2021)
+- **AWS Certified Cloud Practitioner** (2021)
+- **Well-Architected Proficient** (2022)
+
+#### Microsoft Azure Certifications
+- **Azure Solutions Architect Expert** (2020)
+- **Azure AI Engineer Associate** (2021)
+- **Azure Data Scientist Associate** (2021)
+- **Azure Security Engineer Associate** (2020)
+- **Azure Data Fundamentals** (2020)
+- **Azure AI Fundamentals** (2020)
+- **Azure Fundamentals** (2020)
+- **Power Platform App Maker Associate** (2021)
+- **Power Platform Fundamentals** (2020)
+
+#### Kubernetes & Cloud Native (CNCF)
+- **Kubestronaut** (2024) - All 5 CNCF Kubernetes certifications
+- **CKS: Certified Kubernetes Security Specialist** (2024)
+- **CKA: Certified Kubernetes Administrator** (2023)
+- **CKAD: Certified Kubernetes Application Developer** (2023)
+- **KCSA: Kubernetes and Cloud Native Security Associate** (2024)
+- **KCNA: Kubernetes and Cloud Native Associate** (2024)
+
+#### Infrastructure as Code
+- **HashiCorp Certified: Terraform Associate (003)** (2024)
+
+[View all my certifications on Credly →](https://www.credly.com/users/brayan-andres-torres-contreras)
+
 ## Industry Involvement
 
 I actively participate in the cloud and AI communities through:
