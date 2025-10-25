@@ -54,7 +54,7 @@ params:
 
   homeInfoParams:
     Title: "Hi there! 👋"
-    Content: "Welcome to my AI engineering blog where I share insights about machine learning, deep learning, AI systems, and cutting-edge AI technologies."
+    Content: "Welcome to my technical blog where I blend my expertise in cloud engineering, Kubernetes, and DevOps with my passion for AI engineering and MLOps. As a Platform Infrastructure Engineer and Kubestronaut, I share practical insights on building production-grade, scalable systems at the intersection of cloud-native technologies and artificial intelligence. Topics include MLOps pipelines, Kubernetes patterns, AI agents, cloud architecture, and DevSecOps best practices."
 
   socialIcons:
     - name: github
