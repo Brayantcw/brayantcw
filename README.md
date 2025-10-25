@@ -130,12 +130,19 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 
 ## Blog & Writing
 
-I write about **AI engineering, cloud infrastructure, and platform engineering** on my technical blog. Topics include:
+### Hi there! 👋
 
--  **AI Engineering**: MLOps, production AI systems, and AI tools comparisons
--  **Cloud Architecture**: AWS patterns, serverless architectures, and cost optimization  
--  **Platform Engineering**: Kubernetes best practices, GitOps workflows, and infrastructure as code
--  **DevSecOps**: Security in CI/CD, runtime hardening, and compliance frameworks
+Welcome to my technical blog where I blend my expertise in **cloud engineering**, **Kubernetes**, and **DevOps** with my passion for **AI engineering** and **MLOps**. As a Platform Infrastructure Engineer and Kubestronaut, I share practical insights on building production-grade, scalable systems at the intersection of cloud-native technologies and artificial intelligence.
+
+#### What You'll Find Here:
+
+-  **MLOps & AI Infrastructure**: Deploying and scaling ML models on Kubernetes, building MLOps pipelines, and production AI system patterns
+-  **Cloud Architecture & DevOps**: AWS best practices, infrastructure as code with Terraform, GitOps workflows with ArgoCD, and CI/CD automation
+-  **Kubernetes Deep Dives**: Advanced scheduling, resource optimization, security hardening, and platform engineering patterns
+-  **AI Engineering**: Building RAG systems, AI agents, and exploring cutting-edge AI/ML development patterns
+-  **DevSecOps**: Security-first approaches for cloud-native applications, from secure CI/CD to runtime protection
+
+Drawing from my experience engineering platforms that support 100+ enterprise applications at Roche and architecting cloud solutions at AWS, I share real-world patterns, lessons learned, and practical guides for building robust, secure, and scalable systems.
 
 **Visit my blog**: [brayantcw.github.io/brayantcw](https://brayantcw.github.io/brayantcw)
 
