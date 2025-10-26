@@ -60,7 +60,7 @@ The medical domain adds another layer of complexity: specialized vocabulary, cli
 
 I designed and implemented a complete end-to-end system that addresses these challenges using modern cloud-native technologies and AI capabilities. The system provides automated data ingestion, semantic search, data validation, and an AI-powered query interface.
 
-{{< figure src="images/architecture-overview.png" alt="System Architecture" caption="High-level architecture of the medical research data pipeline" >}}
+{{< figure src="images/alto_nivel.png" alt="System Architecture" caption="High-level architecture of the medical research data pipeline" >}}
 
 *[SPACE FOR ARCHITECTURE DIAGRAM - showing Azure, Kubernetes, Airflow, Weaviate, and RAG Agent components]*
 
@@ -98,7 +98,7 @@ All infrastructure is defined as code using Terraform, making deployments reprod
 - Optional Application Gateway for secure access
 ```
 
-{{< figure src="images/infrastructure-diagram.png" alt="Infrastructure Components" caption="Cloud infrastructure components and their interactions" >}}
+{{< figure src="images/Architectura.png" alt="Infrastructure Components" caption="Cloud infrastructure components and their interactions" >}}
 
 *[SPACE FOR INFRASTRUCTURE DIAGRAM - showing AKS, Terraform modules, networking, and storage]*
 
