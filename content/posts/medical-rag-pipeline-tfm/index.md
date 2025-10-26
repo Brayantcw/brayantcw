@@ -305,33 +305,6 @@ az aks get-credentials --resource-group tfm-brayanto --name aks-cluster
 
 Everything gets configured automatically—networking, storage, security, the works.
 
-## The Hard Parts (and How I Solved Them)
-
-Building this wasn't all smooth sailing. Here are some challenges I ran into:
-
-### Challenge 1: Huge Model Sizes
-
-Medical BERT models are massive—over 2GB. This made Kubernetes pods take forever to start.
-
-**My solution:** I pre-cached models in a custom Docker image and implemented lazy loading with progress tracking. Now pods start in seconds instead of minutes.
-
-### Challenge 2: API Rate Limits
-
-Trying to fetch thousands of papers from PubMed triggered their rate limiter. Hard.
-
-**My solution:** Exponential backoff, request throttling, and batch processing with checkpoints. If a batch fails, we don't lose progress.
-
-### Challenge 3: Slow Searches
-
-Initially, searches were painfully slow once we had large collections.
-
-**My solution:** Optimized Weaviate's configuration (proper indexing is crucial), increased resources where needed, and implemented result caching for common queries.
-
-### Challenge 4: Token Limits
-
-Medical papers are long. Really long. They kept exceeding LLM context windows.
-
-**My solution:** Smart chunking, automatic summarization, and selective passage retrieval. Only send the most relevant parts to the LLM.
 
 ## How Well Does It Work?
 
@@ -365,8 +338,6 @@ Feel free to clone it, break it, improve it—whatever works for you.
 This Master's Thesis showed me how powerful modern AI and cloud technologies can be when applied thoughtfully to real problems. By combining semantic search, vector databases, and retrieval-augmented generation, we can build systems that genuinely help people do their jobs better.
 
 The journey from "wouldn't it be cool if..." to a production-ready system taught me more than any course could. Whether you're building something similar or just exploring what's possible with RAG, I hope this breakdown gives you some useful insights.
-
-Got questions about medical AI pipelines or want to chat about RAG architectures? Hit me up!
 
 ---
 
