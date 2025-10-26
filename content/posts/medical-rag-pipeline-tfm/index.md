@@ -38,7 +38,7 @@ For my Master's Thesis at Universidad Complutense de Madrid (UCM), I tackled a f
 
 The result? A comprehensive medical research data pipeline that combines Apache Airflow workflow orchestration, Weaviate vector database, and AI-powered RAG capabilities to enable advanced medical research and patient similarity analysis. In this post, I'll walk you through the problem, the architecture, and the key technical decisions that made this project successful.
 
-🎥 **Want to see it in action?** Check out the [video presentation](https://youtu.be/q3rQbfIoycY) of the solution.
+
 
 ## The Problem: Medical Research at Scale
 
@@ -51,7 +51,7 @@ Moreover, researchers need to:
 - **Query information naturally** using conversational AI interfaces instead of complex database queries
 
 
-{{< figure src="images/Doctor.png" >}}
+{{< figure src="images/Doctor.png" width="300px" >}}
 
 
 The medical domain adds another layer of complexity: specialized vocabulary, clinical parameters, and the need for domain-specific embeddings that understand medical context. Generic AI models and search systems simply don't cut it when dealing with conditions like diabetic nephropathy or pharmacological interventions.
