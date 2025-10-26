@@ -62,7 +62,6 @@ I designed and implemented a complete end-to-end system that addresses these cha
 
 {{< figure src="images/alto_nivel.png" alt="System Architecture" caption="High-level architecture of the medical research data pipeline" >}}
 
-*[SPACE FOR ARCHITECTURE DIAGRAM - showing Azure, Kubernetes, Airflow, Weaviate, and RAG Agent components]*
 
 ### Key Features
 
@@ -98,9 +97,7 @@ All infrastructure is defined as code using Terraform, making deployments reprod
 - Optional Application Gateway for secure access
 ```
 
-{{< figure src="images/Architectura.png" alt="Infrastructure Components" caption="Cloud infrastructure components and their interactions" >}}
-
-*[SPACE FOR INFRASTRUCTURE DIAGRAM - showing AKS, Terraform modules, networking, and storage]*
+{{< figure src="images/Arquitectura.png" alt="Infrastructure Components" caption="Cloud infrastructure components and their interactions" >}}
 
 ### Data Orchestration: Apache Airflow
 
