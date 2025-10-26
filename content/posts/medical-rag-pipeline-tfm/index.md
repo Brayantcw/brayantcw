@@ -93,21 +93,21 @@ All infrastructure is defined as code using Terraform, making deployments reprod
 ```hcl
 # Key infrastructure components managed by Terraform
 - Azure Kubernetes Service (AKS) cluster
-- Apache Airflow with custom medical research DAGs
+- Apache Airflow with custom DAGs
 - Weaviate vector database deployment
-- Helm charts for service orchestration
-- Optional Application Gateway for secure access
+- Application Gateway for secure access
+- Azure Storage Accounts for persistent storage
 ```
 
 {{< figure src="images/Arquitectura.png" alt="Infrastructure Components" caption="Cloud infrastructure components and their interactions" >}}
 
 ### Data Orchestration: Apache Airflow
 
-Apache Airflow serves as the backbone for workflow orchestration, managing the entire ETL (Extract, Transform, Load) process for medical data. I designed four main DAGs (Directed Acyclic Graphs) that handle different aspects of the pipeline:
+Apache Airflow serves as the backbone for workflow orchestration, managing the entire ETL (Extract, Transform, Load) process for medical data. I designed four main DAGs (Directed Acyclic Graphs) that handle different aspects of the solution:
 
 #### 1. Medical Research Ingestion DAG
 
-This workflow fetches medical research papers from PubMed using the Biopython library and processes them for storage in Weaviate:
+This workflow fetches medical research papers from PubMed using the Biopython library and processes them for storage in Weaviate (embbeding generation):
 
 ```python
 # Key steps in medical research ingestion
@@ -120,9 +120,11 @@ This workflow fetches medical research papers from PubMed using the Biopython li
 
 The pipeline handles thousands of papers efficiently, with error handling and retry logic for robust operation.
 
+{{< figure src="images/medical_ingestion.png" alt="DAG medical Ingestion" caption="Medical Ingestion Dag" >}}
+
 #### 2. Synthetic Patient Data Ingestion DAG
 
-To enable patient similarity matching without privacy concerns, I implemented synthetic patient data generation focused on diabetes:
+To enable patient similarity matching without privacy concerns (and to avoid the hard work of having access to actual patient data), I implemented synthetic patient data generation focused on diabetes:
 
 ```python
 # Synthetic patient profile structure
@@ -132,6 +134,8 @@ To enable patient similarity matching without privacy concerns, I implemented sy
 - Treatment History: Medications, complications
 - Lifestyle Factors: Diet, exercise, smoking status
 ```
+{{< figure src="images/sysntethic_data_ingestion.png" alt="DAG patient Data Generator" caption="Medical Ingestion Dag" >}}
+
 
 Each patient profile is embedded as a clinical summary, enabling semantic similarity searches.
 
