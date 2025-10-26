@@ -34,27 +34,29 @@ editPost:
 
 # Building a Medical Research RAG Pipeline: My Master's Thesis Journey
 
-For my Master's Thesis at Universidad Complutense de Madrid (UCM), I tackled a fascinating challenge at the intersection of healthcare, artificial intelligence, and data engineering. The goal was ambitious: create a production-ready system that could ingest medical research papers, generate synthetic patient data, and provide AI-powered insights through semantic search and retrieval-augmented generation (RAG).
+When I started my Master's Thesis at Universidad Complutense de Madrid, I knew I wanted to work on something that really mattered. I ended up diving deep into a problem that sits right at the sweet spot of healthcare, AI, and data engineering: how do we make medical research more accessible and actionable?
 
-The result? A comprehensive medical research data pipeline that combines Apache Airflow workflow orchestration, Weaviate vector database, and AI-powered RAG capabilities to enable advanced medical research and patient similarity analysis. In this post, I'll walk you through the problem, the architecture, and the key technical decisions that made this project successful.
+The challenge? Build a system that could actually work in the real world—one that ingests medical research papers, generates synthetic patient data, and delivers intelligent insights through semantic search and RAG (Retrieval-Augmented Generation).
 
+After some work, I built a medical research data pipeline that brings together Apache Airflow for orchestration, Weaviate as a vector database, and RAG capabilities for AI-powered analysis. The system can help researchers find relevant studies and identify similar patient cases much faster than traditional methods.
 
-
-## The Problem: Medical Research at Scale
-
-Healthcare organizations and medical researchers face a critical challenge: how do you efficiently search through thousands of medical research papers and patient records to find relevant information? Traditional keyword-based search systems fall short when dealing with complex medical terminology and semantic relationships.
-
-Moreover, researchers need to:
-- **Discover relevant medical literature** from databases like PubMed quickly
-- **Find similar patients** based on clinical profiles for treatment recommendations
-- **Validate data quality** ensuring accuracy and consistency of medical information
-- **Query information naturally** using conversational AI interfaces instead of complex database queries
+In this post, I'm going to break down the problem I was trying to solve, the architecture I designed, and some of the key decisions I made along the way. Spoiler alert: it involved a lot of trial and error, but that's where the interesting lessons are.
 
 
-{{< figure src="images/Doctor.png" width="300px" >}}
 
+## The Problem: Why Medical Research Needs Better Tools
 
-The medical domain adds another layer of complexity: specialized vocabulary, clinical parameters, and the need for domain-specific embeddings that understand medical context. Generic AI models and search systems simply don't cut it when dealing with conditions like diabetic nephropathy or pharmacological interventions.
+If you've ever tried searching for medical information, you know how frustrating it can be. Now imagine you're a researcher trying to sift through thousands of research papers and patient records to find what you need. Traditional search tools—the ones that just look for keyword matches—really struggle here. Medical terminology is complex, and context matters a lot.
+
+Here's what researchers actually need to do every day:
+- **Find relevant studies fast** – PubMed has millions of papers, and time matters when you're treating patients
+- **Identify similar patient cases** – knowing how other patients with similar profiles responded to treatment can be incredibly valuable
+- **Trust the data** – medical information needs to be accurate and consistent.
+- **Ask questions naturally** – nobody wants to learn complex database query languages when they could just ask a question in plain English
+
+But here's where it gets tricky: medical language is its own beast. You can't just throw a general-purpose AI at terms like "diabetic nephropathy" or expect it to understand the nuances of different pharmacological interventions. The medical domain needs specialized tools that actually understand clinical context—not just pattern matching on buzzwords.
+
+That's the gap I wanted to fill.
 
 ## The Solution: A Cloud-Native Medical AI Pipeline
 
@@ -82,7 +84,7 @@ Let me break down the core components and how they work together to create a sea
 The foundation of the system runs on Azure Kubernetes Service (AKS), providing container orchestration, scalability, and resilience. I chose Kubernetes for several reasons:
 
 - **Scalability**: Easily handle varying workloads from batch processing to real-time queries
-- **Service Discovery**: Automatic networking between Airflow, Weaviate, and the RAG agent
+- **Service Discovery**: Automatic networking between Airflow, Weaviate, and the Ai agent
 - **Resource Management**: Efficient allocation of compute and memory for data-intensive tasks
 - **Cloud-Native**: Native integration with Azure services and monitoring tools
 
