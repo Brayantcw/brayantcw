@@ -146,7 +146,15 @@ Each patient profile is embedded as a clinical summary, enabling semantic simila
 Two separate validation workflows ensure data quality:
 
 - **Medical Research Validation**: Tests retrieval accuracy, embedding quality, and search performance
+
+{{< figure src="images/val_article.png" alt="patient" caption="Data Validation Pipeline" >}}
+
+
 - **Patient Data Validation**: Analyzes demographics, clinical correlations, and similarity search effectiveness
+
+
+{{< figure src="images/val_patient.png" alt="patient" caption="Data Validation Pipeline" >}}
+
 
 ### Vector Database: Weaviate
 
