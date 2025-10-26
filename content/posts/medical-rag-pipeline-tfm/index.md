@@ -1,5 +1,5 @@
 ---
-title: "Building a Medical Research RAG Pipeline: My Master's Thesis Journey"
+title: "Production-Ready Medical AI: A Deep Dive into RAG Pipelines for Healthcare"
 date: 2025-10-25T12:00:00-00:00
 draft: false
 tags: ["ai", "rag", "medical-ai", "kubernetes", "airflow", "weaviate", "machine-learning", "data-engineering"]
@@ -32,7 +32,7 @@ editPost:
     appendFilePath: true
 ---
 
-# Building a Medical Research RAG Pipeline: My Master's Thesis Journey
+# Production-Ready Medical AI: A Deep Dive into RAG Pipelines for Healthcare
 
 When I started my Master's Thesis at Universidad Complutense de Madrid, I knew I wanted to work on something that really mattered. I ended up diving deep into a problem that sits right at the sweet spot of healthcare, AI, and data engineering: how do we make medical research more accessible and actionable?
 
