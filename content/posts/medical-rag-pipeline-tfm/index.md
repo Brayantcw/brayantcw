@@ -38,11 +38,9 @@ When I started my Master's Thesis at Universidad Complutense de Madrid, I knew I
 
 The challenge? Build a system that could actually work in the real world—one that ingests medical research papers, generates synthetic patient data, and delivers intelligent insights through semantic search and RAG (Retrieval-Augmented Generation).
 
-After some work, I built a medical research data pipeline that brings together Apache Airflow for orchestration, Weaviate as a vector database, and RAG capabilities for AI-powered analysis. The system can help researchers find relevant studies and identify similar patient cases much faster than traditional methods.
+After months of work (and plenty of late nights debugging Kubernetes pods), I built a medical research data pipeline that brings together Apache Airflow for orchestration, Weaviate as a vector database, and RAG capabilities for AI-powered analysis. The system helps researchers find relevant studies and identify similar patient cases way faster than traditional methods.
 
 In this post, I'm going to break down the problem I was trying to solve, the architecture I designed, and some of the key decisions I made along the way. Spoiler alert: it involved a lot of trial and error, but that's where the interesting lessons are.
-
-
 
 ## The Problem: Why Medical Research Needs Better Tools
 
@@ -51,44 +49,45 @@ If you've ever tried searching for medical information, you know how frustrating
 Here's what researchers actually need to do every day:
 - **Find relevant studies fast** – PubMed has millions of papers, and time matters when you're treating patients
 - **Identify similar patient cases** – knowing how other patients with similar profiles responded to treatment can be incredibly valuable
-- **Trust the data** – medical information needs to be accurate and consistent.
+- **Trust the data** – medical information needs to be accurate and consistent
 - **Ask questions naturally** – nobody wants to learn complex database query languages when they could just ask a question in plain English
 
 But here's where it gets tricky: medical language is its own beast. You can't just throw a general-purpose AI at terms like "diabetic nephropathy" or expect it to understand the nuances of different pharmacological interventions. The medical domain needs specialized tools that actually understand clinical context—not just pattern matching on buzzwords.
 
 That's the gap I wanted to fill.
 
-## The Solution: A Cloud-Native Medical AI Pipeline
+## The Solution: Building Something That Actually Works
 
-I designed and implemented a complete end-to-end system that addresses these challenges using modern cloud-native technologies and AI capabilities. The system provides automated data ingestion, semantic search, data validation, and an AI-powered query interface.
+So I rolled up my sleeves and built an end-to-end system to tackle these problems. The key was using modern cloud-native tools and AI in a way that made sense for the medical domain—not just because they're trendy, but because they solve real problems.
+
+What I ended up with is a pipeline that handles everything: it automatically pulls in data, understands what it means (thanks to semantic search), validates accuracy, and lets researchers ask questions like they're talking to a colleague instead of a database.
 
 {{< figure src="images/alto_nivel.png" alt="System Architecture" caption="High-level architecture of the medical research data pipeline" >}}
 
+### What It Can Do
 
-### Key Features
+Here's what makes this system tick:
 
-The system delivers several critical capabilities:
+- **Medical Domain Optimization** – I used specialized BERT models that were actually trained on medical literature. This makes a huge difference when dealing with clinical terminology.
+- **Dual Data Collections** – Separate spaces for research papers (from PubMed) and patient profiles (synthetic diabetes data, because getting real patient data is... complicated).
+- **Multiple Search Strategies** – Vector search for semantic similarity, BM25 for keyword matching, and hybrid modes that combine both. Plus optional reranking to fine-tune results.
+- **Flexible AI Backend** – Works with OpenAI, Azure OpenAI, or local Ollama models depending on your needs and budget.
+- **Production-Ready Setup** – Everything automated with Terraform, complete with monitoring and security baked in.
 
-- **Medical Domain Optimization**: Uses specialized BERT models trained on medical literature for accurate text understanding
-- **Dual Data Collections**: Separate collections for research papers (PubMed) and patient profiles (synthetic diabetes data)
-- **Advanced Search Capabilities**: Vector search, BM25 keyword search, and hybrid modes with optional reranking
-- **Flexible AI Integration**: Supports OpenAI, Azure OpenAI, and local Ollama models for different deployment scenarios
-- **Production-Ready Infrastructure**: Complete automation with Terraform, monitoring, and security considerations
+## Getting Into the Technical Details
 
-## Technical Architecture Deep Dive
+Let me walk you through how this all fits together. Fair warning: we're about to get into the weeds a bit.
 
-Let me break down the core components and how they work together to create a seamless medical research platform.
+### The Foundation: Kubernetes on Azure
 
-### Infrastructure Layer: Kubernetes on Azure
+The whole system runs on Azure Kubernetes Service (AKS). I went with Kubernetes for a few good reasons:
 
-The foundation of the system runs on Azure Kubernetes Service (AKS), providing container orchestration, scalability, and resilience. I chose Kubernetes for several reasons:
+- **It scales when you need it** – Whether you're running batch jobs or handling real-time queries, K8s handles it
+- **Services talk to each other automatically** – No manual configuration for networking between Airflow, Weaviate, and the AI agent
+- **Smart resource management** – When you're dealing with embedding models and large datasets, efficient compute allocation matters
+- **Cloud-native integrations** – Azure plays nice with Kubernetes, making monitoring and management easier
 
-- **Scalability**: Easily handle varying workloads from batch processing to real-time queries
-- **Service Discovery**: Automatic networking between Airflow, Weaviate, and the Ai agent
-- **Resource Management**: Efficient allocation of compute and memory for data-intensive tasks
-- **Cloud-Native**: Native integration with Azure services and monitoring tools
-
-All infrastructure is defined as code using Terraform, making deployments reproducible and version-controlled. The Terraform modules handle:
+Everything is infrastructure-as-code using Terraform. This was a game-changer for reproducibility. I can spin up the entire stack with a single command, and everything is version-controlled:
 
 ```hcl
 # Key infrastructure components managed by Terraform
@@ -101,13 +100,13 @@ All infrastructure is defined as code using Terraform, making deployments reprod
 
 {{< figure src="images/Arquitectura.png" alt="Infrastructure Components" caption="Cloud infrastructure components and their interactions" >}}
 
-### Data Orchestration: Apache Airflow
+### The Orchestrator: Apache Airflow
 
-Apache Airflow serves as the backbone for workflow orchestration, managing the entire ETL (Extract, Transform, Load) process for medical data. I designed four main DAGs (Directed Acyclic Graphs) that handle different aspects of the solution:
+Apache Airflow is the brain of the operation. It manages all the ETL workflows for getting data in, processing it, and keeping it fresh. I built four main DAGs that each handle different pieces:
 
-#### 1. Medical Research Ingestion DAG
+#### 1. Getting Medical Research Papers
 
-This workflow fetches medical research papers from PubMed using the Biopython library and processes them for storage in Weaviate (embbeding generation):
+This workflow pulls papers from PubMed using the Biopython library and gets them ready for Weaviate:
 
 ```python
 # Key steps in medical research ingestion
@@ -118,13 +117,13 @@ This workflow fetches medical research papers from PubMed using the Biopython li
 5. Handle citation analysis and keyword processing
 ```
 
-The pipeline handles thousands of papers efficiently, with error handling and retry logic for robust operation.
+It can process thousands of papers, and I added retry logic so it doesn't break when the PubMed API has a bad day.
 
 {{< figure src="images/medical_ingestion.png" alt="DAG medical Ingestion" caption="Medical Ingestion Dag" >}}
 
-#### 2. Synthetic Patient Data Ingestion DAG
+#### 2. Creating Synthetic Patient Data
 
-To enable patient similarity matching without privacy concerns (and to avoid the hard work of having access to actual patient data), I implemented synthetic patient data generation focused on diabetes:
+Here's a fun part: to enable patient similarity matching without dealing with privacy regulations (or the nightmare of getting access to real patient data), I built a synthetic data generator focused on diabetes patients:
 
 ```python
 # Synthetic patient profile structure
@@ -134,41 +133,37 @@ To enable patient similarity matching without privacy concerns (and to avoid the
 - Treatment History: Medications, complications
 - Lifestyle Factors: Diet, exercise, smoking status
 ```
-{{< figure src="images/sysntethic_data_ingestion.png" alt="DAG patient Data Generator" caption="Medical Ingestion Dag" >}}
+{{< figure src="images/sysntethic_data_ingestion.png" alt="DAG patient Data Generator" caption="Synthetic Patient Data Ingestion DAG" >}}
 
+Each patient profile gets turned into a clinical summary and embedded, so we can do semantic searches to find similar cases.
 
-Each patient profile is embedded as a clinical summary, enabling semantic similarity searches.
+{{< figure src="images/patient.png" alt="patient" caption="Vector representation of patient data" >}}
 
-{{< figure src="images/patient.png" alt="patient" caption="vector representation" >}}
+#### 3. Making Sure the Data is Good
 
-#### 3. Data Validation DAGs
+I built two separate validation pipelines because data quality in healthcare is non-negotiable:
 
-Two separate validation workflows ensure data quality:
+**Medical Research Validation** – Tests whether we're getting accurate retrieval, good embedding quality, and fast search performance.
 
-- **Medical Research Validation**: Tests retrieval accuracy, embedding quality, and search performance
+{{< figure src="images/val_article.png" alt="validation article" caption="Research Paper Validation Pipeline" >}}
 
-{{< figure src="images/val_article.png" alt="patient" caption="Data Validation Pipeline" >}}
+**Patient Data Validation** – Checks demographics make sense, clinical parameters correlate properly, and similarity searches actually work.
 
+{{< figure src="images/val_patient.png" alt="validation patient" caption="Patient Data Validation Pipeline" >}}
 
-- **Patient Data Validation**: Analyzes demographics, clinical correlations, and similarity search effectiveness
+### The Search Engine: Weaviate
 
+Weaviate is where all the magic happens for search. I picked it over other vector databases for some pretty compelling reasons:
 
-{{< figure src="images/val_patient.png" alt="patient" caption="Data Validation Pipeline" >}}
+- **Built for vector search** – It's optimized specifically for high-dimensional embeddings like the ones we're using for medical text
+- **Hybrid search out of the box** – Combines vector similarity with BM25 keyword search, giving you the best of both worlds
+- **GraphQL API** – Makes querying flexible and powerful
+- **Fast performance** – gRPC support means real-time queries don't feel sluggish
+- **Structured data models** – You can define schemas and get automatic validation
 
+#### How I Set Up the Data
 
-### Vector Database: Weaviate
-
-Weaviate serves as the semantic search engine and vector database. I chose Weaviate for several compelling reasons:
-
-- **Native Vector Search**: Optimized for high-dimensional medical embeddings
-- **Hybrid Search**: Combines vector similarity with BM25 keyword search
-- **GraphQL API**: Flexible querying with powerful filtering capabilities
-- **gRPC Support**: High-performance connections for real-time queries
-- **Schema Management**: Structured data models with automatic validation
-
-#### Data Models
-
-I designed two primary collections with optimized schemas:
+I designed two main collections with schemas that make sense for the data:
 
 **MedicalResearch Collection:**
 ```graphql
@@ -192,36 +187,19 @@ I designed two primary collections with optimized schemas:
   gender: String
   hba1c: Float
   glucose_level: Float
-  bmi: Float
-  blood_pressure_systolic: Integer
-  blood_pressure_diastolic: Integer
   egfr: Float
-  creatinine: Float
   medications: String[]
   complications: String[]
-  clinical_summary: Text
 }
 ```
 
-### Medical Embeddings:
+### The User Interface: RAG Agent
 
-Generic embedding models don't understand medical terminology well. That's why I integrated **S-PubMedBert-MS-MARCO**, a BERT model specifically trained on PubMed medical literature. This model understands:
+This is the part users actually interact with—a Streamlit app that lets researchers ask questions in plain English and get intelligent answers back.
 
-- Medical terminology and abbreviations (HbA1c, eGFR, etc.)
-- Clinical relationships and correlations
-- Drug names and therapeutic interventions
-- Disease classifications and symptoms
+#### How RAG Works Here
 
-The embedding model converts text into 768-dimensional vectors that capture semantic meaning, enabling accurate similarity searches.
-
-
-### RAG Agent: AI-Powered Medical Assistant
-
-The crown jewel of the system is the Streamlit-based RAG (Retrieval-Augmented Generation) agent. This interface allows researchers and clinicians to query the system using natural language.
-
-#### How RAG Works
-
-The RAG pipeline follows these steps:
+The pipeline is pretty straightforward:
 
 ```python
 # RAG Pipeline Flow
@@ -234,62 +212,60 @@ The RAG pipeline follows these steps:
 7. Answer is presented to user with source citations
 ```
 
-####  Search Modes
+#### Different Ways to Search
 
-The RAG agent provides multiple search strategies:
+I implemented multiple search strategies because different queries need different approaches:
 
-- **Vector Search**: Pure semantic similarity using embeddings
-- **BM25 Search**: Traditional keyword-based search
-- **Hybrid Search**: Combines both approaches for best results
-- **With Reranking**: Optional reranking step to improve relevance
+- **Vector Search** – Pure semantic similarity. Great for conceptual questions.
+- **BM25 Search** – Traditional keyword matching. Works well when you know exact terms.
+- **Hybrid Search** – Combines both. Usually the best option.
+- **With Reranking** – An optional step that reorders results for even better relevance.
 
-{{< figure src="images/rag-interface.png" alt="RAG Agent Interface" caption="Streamlit interface for the medical RAG system" >}}
+{{< figure src="images/Articles.png" alt="RAG Agent Interface" caption="Streamlit interface for the medical RAG system" >}}
 
-*[SPACE FOR RAG INTERFACE SCREENSHOT - showing the Streamlit UI with query input and results]*
+## What You Can Actually Do With This
 
-## Practical Use Cases
+Theory is great, but let's talk about real use cases:
 
-The system enables several real-world medical research workflows:
+### Literature Review Made Easy
 
-### 1. Literature Review
-
-Researchers can quickly find relevant papers on specific topics:
+Say you're a researcher trying to catch up on the latest treatments:
 
 > **Query:** "What are the latest treatments for diabetic nephropathy?"
 
-The RAG agent searches across thousands of PubMed papers and provides a summarized answer with citations.
+The RAG agent searches thousands of PubMed papers and gives you a summary with citations. No more spending hours skimming abstracts.
 
-### 2. Patient Similarity Matching
+### Finding Similar Patients
 
-Clinicians can find similar patients for treatment recommendations:
+Clinicians can find comparable cases for treatment insights:
 
 > **Query:** "Show me patients similar to: 45-year-old male, Type 2 diabetes, HbA1c 8.5%, eGFR 60"
 
-The system uses vector similarity to find patients with comparable clinical profiles.
+The system uses vector similarity to find patients with matching clinical profiles. It's like having a photographic memory of every case you've ever seen.
 
-### 3. Clinical Decision Support
+### Clinical Decision Support
 
-Compare treatment effectiveness across patient cohorts:
+Compare different treatment approaches:
 
 > **Query:** "Compare metformin vs insulin effectiveness in elderly patients with reduced kidney function"
 
-The system retrieves relevant patient data and research papers to inform the comparison.
+The system pulls relevant patient data and research papers to help inform the comparison.
 
-### 4. Drug Discovery Insights
+### Research Insights
 
-Analyze research papers for therapeutic insights:
+Analyze papers for emerging trends:
 
 > **Query:** "What are emerging therapies targeting SGLT2 inhibitors for diabetes?"
 
-The semantic search identifies relevant papers even when different terminology is used.
+Even if papers use different terminology, semantic search finds what you're looking for.
 
-## Development Experience: Local to Cloud
+## From Laptop to Cloud: Making Development Smooth
 
-One of the key design goals was seamless development from local machines to production cloud deployment. I created comprehensive tooling for both scenarios.
+I wanted this to be easy to work with, whether you're developing locally or deploying to production. So I built tooling for both scenarios.
 
-### Local Development Setup
+### Working Locally
 
-For local development, I created an automated installation script that:
+For local development, I created an automated setup script:
 
 ```bash
 # Automated local setup with install-airflow.sh
@@ -300,22 +276,22 @@ For local development, I created an automated installation script that:
 5. Verifies service health
 ```
 
-The `port-forward.sh` script manages all service access elegantly:
+The port-forward script makes accessing services simple:
 
 ```bash
 # Start all services in background
 ./port-forward.sh start
 
-# Check status
+# Check what's running
 ./port-forward.sh status
 
-# Stop all services
+# Stop everything
 ./port-forward.sh stop
 ```
 
-### Cloud Deployment
+### Deploying to Azure
 
-Deploying to Azure is equally straightforward:
+Getting everything running in the cloud is just as straightforward:
 
 ```bash
 # Deploy complete infrastructure
@@ -323,86 +299,75 @@ cd terraform_module
 terraform init
 terraform apply
 
-# Get AKS credentials
+# Connect to your cluster
 az aks get-credentials --resource-group tfm-brayanto --name aks-cluster
 ```
 
-All services are automatically configured with proper networking, storage, and security settings.
+Everything gets configured automatically—networking, storage, security, the works.
+
+## The Hard Parts (and How I Solved Them)
+
+Building this wasn't all smooth sailing. Here are some challenges I ran into:
+
+### Challenge 1: Huge Model Sizes
+
+Medical BERT models are massive—over 2GB. This made Kubernetes pods take forever to start.
+
+**My solution:** I pre-cached models in a custom Docker image and implemented lazy loading with progress tracking. Now pods start in seconds instead of minutes.
+
+### Challenge 2: API Rate Limits
+
+Trying to fetch thousands of papers from PubMed triggered their rate limiter. Hard.
+
+**My solution:** Exponential backoff, request throttling, and batch processing with checkpoints. If a batch fails, we don't lose progress.
+
+### Challenge 3: Slow Searches
+
+Initially, searches were painfully slow once we had large collections.
+
+**My solution:** Optimized Weaviate's configuration (proper indexing is crucial), increased resources where needed, and implemented result caching for common queries.
+
+### Challenge 4: Token Limits
+
+Medical papers are long. Really long. They kept exceeding LLM context windows.
+
+**My solution:** Smart chunking, automatic summarization, and selective passage retrieval. Only send the most relevant parts to the LLM.
+
+## How Well Does It Work?
+
+The system performs pretty well across the metrics that matter:
+
+- **Ingestion Speed** – Processes 500+ PubMed papers per hour
+- **Query Response Time** – Under 2 seconds for RAG answers
+- **Search Relevance** – 85%+ accuracy for top-5 results
+- **Scale** – Handles 10,000+ patients and papers without breaking a sweat
+- **Reliability** – 99.5%+ uptime thanks to Kubernetes auto-healing
+
+## What's Next?
+
+There's always room to make things better. Here's what I'm thinking about:
+
+1. **Multi-Modal Search** – Add support for medical imaging data
+2. **Fine-Tuned Medical LLM** – Train a domain-specific language model
+3. **Real-Time Updates** – Stream new papers as they're published
+4. **Federated Search** – Connect to multiple medical databases simultaneously
+5. **Predictive Analytics** – Add modeling for trend analysis and predictions
 
 
-## Challenges and Solutions
+## Want to Try It?
 
-Building this system came with several interesting challenges:
+The complete source code is on GitHub: [TFM-MDE-BRAYAN-TORRES](https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES)
 
-### Challenge 1: Medical Embedding Model Size
+Feel free to clone it, break it, improve it—whatever works for you.
 
-Medical BERT models are large (2GB+), causing slow pod startup times.
+## Wrapping Up
 
-**Solution:** Pre-cached models in custom Docker image and implemented lazy loading with progress tracking.
+This Master's Thesis showed me how powerful modern AI and cloud technologies can be when applied thoughtfully to real problems. By combining semantic search, vector databases, and retrieval-augmented generation, we can build systems that genuinely help people do their jobs better.
 
-### Challenge 2: PubMed API Rate Limits
+The journey from "wouldn't it be cool if..." to a production-ready system taught me more than any course could. Whether you're building something similar or just exploring what's possible with RAG, I hope this breakdown gives you some useful insights.
 
-Bulk fetching papers triggered rate limiting.
-
-**Solution:** Implemented exponential backoff, request throttling, and batch processing with checkpointing.
-
-### Challenge 3: Vector Search Performance
-
-Initial searches were slow with large collections.
-
-**Solution:** Optimized Weaviate configuration with proper indexing, increased resources, and implemented result caching.
-
-### Challenge 4: LLM Context Window Limits
-
-Long medical papers exceeded token limits.
-
-**Solution:** Implemented chunking, summarization, and selective passage retrieval.
-
-
-## Performance Results
-
-The system demonstrates strong performance across key metrics:
-
-- **Ingestion Rate**: 500+ PubMed papers per hour
-- **Query Latency**: <2 seconds for RAG responses
-- **Search Accuracy**: 85%+ relevance for top-5 results
-- **Scalability**: Handles 10,000+ patients and papers
-- **Availability**: 99.5%+ uptime with Kubernetes auto-healing
-
-## Future Enhancements
-
-Several exciting improvements are on the roadmap:
-
-1. **Multi-Modal Search**: Integrate medical imaging data
-2. **Fine-Tuned Medical LLM**: Domain-specific language model
-3. **Real-Time Updates**: Streaming ingestion for new papers
-4. **Federated Search**: Connect to multiple medical databases
-5. **Advanced Analytics**: Predictive modeling and trend analysis
-
-## Key Takeaways
-
-Building this medical research pipeline taught me several valuable lessons:
-
-1. **Domain-Specific Models Matter**: Medical BERT significantly outperforms generic embeddings
-2. **Infrastructure as Code**: Terraform and Helm make deployments reproducible and scalable
-3. **Validation is Critical**: Comprehensive testing ensures data quality and search accuracy
-4. **Flexibility Wins**: Supporting multiple LLM providers accommodates different requirements
-5. **Developer Experience**: Good tooling (like port-forward.sh) accelerates development
-
-## Try It Yourself
-
-The complete source code is available on GitHub: [TFM-MDE-BRAYAN-TORRES](https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES)
-
-
-## Conclusion
-
-This Master's Thesis project demonstrates how modern AI and cloud technologies can transform medical research. By combining semantic search, vector databases, and retrieval-augmented generation, we can build systems that genuinely help researchers and clinicians find relevant information faster.
-
-The journey from concept to production-ready system taught me invaluable lessons about data engineering, AI systems, and the unique challenges of the medical domain. Whether you're building similar systems or just exploring RAG applications, I hope this deep dive provides useful insights.
-
-Have questions or want to discuss medical AI pipelines? Feel free to reach out!
+Got questions about medical AI pipelines or want to chat about RAG architectures? Hit me up!
 
 ---
 
 **Repository**: [https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES](https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES)
-
