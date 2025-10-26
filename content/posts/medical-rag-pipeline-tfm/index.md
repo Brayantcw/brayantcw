@@ -139,16 +139,14 @@ To enable patient similarity matching without privacy concerns (and to avoid the
 
 Each patient profile is embedded as a clinical summary, enabling semantic similarity searches.
 
+{{< figure src="images/patient.png" alt="patient" caption="vector representation" >}}
+
 #### 3. Data Validation DAGs
 
 Two separate validation workflows ensure data quality:
 
 - **Medical Research Validation**: Tests retrieval accuracy, embedding quality, and search performance
 - **Patient Data Validation**: Analyzes demographics, clinical correlations, and similarity search effectiveness
-
-{{< figure src="images/airflow-dags.png" alt="Airflow DAG Visualization" caption="The four main DAGs managing the medical data pipeline" >}}
-
-*[SPACE FOR AIRFLOW DAGS DIAGRAM - showing the four DAGs and their task dependencies]*
 
 ### Vector Database: Weaviate
 
@@ -197,7 +195,7 @@ I designed two primary collections with optimized schemas:
 }
 ```
 
-### Medical Embeddings: The Secret Sauce
+### Medical Embeddings:
 
 Generic embedding models don't understand medical terminology well. That's why I integrated **S-PubMedBert-MS-MARCO**, a BERT model specifically trained on PubMed medical literature. This model understands:
 
@@ -208,9 +206,6 @@ Generic embedding models don't understand medical terminology well. That's why I
 
 The embedding model converts text into 768-dimensional vectors that capture semantic meaning, enabling accurate similarity searches.
 
-{{< figure src="images/embedding-process.png" alt="Medical Embedding Pipeline" caption="How medical text is transformed into semantic vectors" >}}
-
-*[SPACE FOR EMBEDDING DIAGRAM - showing text -> tokenization -> BERT -> vector representation]*
 
 ### RAG Agent: AI-Powered Medical Assistant
 
@@ -231,32 +226,7 @@ The RAG pipeline follows these steps:
 7. Answer is presented to user with source citations
 ```
 
-#### Multi-Provider LLM Support
-
-The agent supports three LLM backends, making it flexible for different deployment scenarios:
-
-**OpenAI:**
-```python
-# Cloud-based, best performance
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-```
-
-**Azure OpenAI:**
-```python
-# Enterprise compliance, data residency
-client = AzureOpenAI(
-    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
-)
-```
-
-**Ollama (Local):**
-```python
-# Privacy-focused, no external API calls
-client = Ollama(base_url="http://localhost:11434")
-```
-
-#### Advanced Search Modes
+####  Search Modes
 
 The RAG agent provides multiple search strategies:
 
@@ -351,19 +321,6 @@ az aks get-credentials --resource-group tfm-brayanto --name aks-cluster
 
 All services are automatically configured with proper networking, storage, and security settings.
 
-## Data Validation and Quality Metrics
-
-A critical aspect of any data pipeline is ensuring quality. The validation DAGs generate comprehensive reports including:
-
-- **Document Count**: Total papers and patients processed
-- **Embedding Quality**: Vector distribution and dimensionality
-- **Retrieval Accuracy**: Precision and recall for test queries
-- **Clinical Correlations**: HbA1c-glucose and creatinine-eGFR relationships
-- **Search Performance**: Query latency and result relevance
-
-{{< figure src="images/validation-metrics.png" alt="Validation Metrics" caption="Data quality metrics from validation DAGs" >}}
-
-*[SPACE FOR VALIDATION METRICS CHART - showing data quality KPIs and graphs]*
 
 ## Challenges and Solutions
 
@@ -391,17 +348,8 @@ Initial searches were slow with large collections.
 
 Long medical papers exceeded token limits.
 
-**Solution:** Implemented intelligent chunking, summarization, and selective passage retrieval.
+**Solution:** Implemented chunking, summarization, and selective passage retrieval.
 
-## Security and Compliance Considerations
-
-Medical data requires careful handling, even when synthetic:
-
-- **Data Encryption**: At-rest and in-transit encryption for all data
-- **Access Control**: Azure AD integration with RBAC for AKS
-- **Audit Trails**: Comprehensive logging of all data access
-- **Secret Management**: Azure Key Vault for API keys and credentials
-- **Network Policies**: Kubernetes network segmentation between services
 
 ## Performance Results
 
@@ -437,29 +385,6 @@ Building this medical research pipeline taught me several valuable lessons:
 
 The complete source code is available on GitHub: [TFM-MDE-BRAYAN-TORRES](https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES)
 
-Getting started is easy:
-
-```bash
-# For local development
-git clone https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES
-cd Local_installation_files
-./install-airflow.sh
-./port-forward.sh start
-
-# Access services
-# Airflow: http://localhost:8080 (admin/admin)
-# Weaviate: http://localhost:9090
-```
-
-For the RAG agent:
-
-```bash
-cd Agent
-pip install streamlit weaviate-client sentence-transformers openai
-export WEAVIATE_URL="http://localhost:9090"
-export OPENAI_API_KEY="your-key-here"
-streamlit run agent.py
-```
 
 ## Conclusion
 
@@ -471,8 +396,5 @@ Have questions or want to discuss medical AI pipelines? Feel free to reach out!
 
 ---
 
-**Technologies Used**: Python, Apache Airflow, Weaviate, Kubernetes, Azure AKS, Terraform, Streamlit, OpenAI, Medical BERT, PubMed API, Helm
-
 **Repository**: [https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES](https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES)
 
-**Video Presentation**: [https://youtu.be/q3rQbfIoycY](https://youtu.be/q3rQbfIoycY)
