@@ -51,7 +51,7 @@ Moreover, researchers need to:
 - **Query information naturally** using conversational AI interfaces instead of complex database queries
 
 
-{{< figure src="images/doctor.png" alt="System Architecture" caption="High-level architecture of the medical research data pipeline" >}}
+{{< figure src="images/Doctor.png" >}}
 
 
 The medical domain adds another layer of complexity: specialized vocabulary, clinical parameters, and the need for domain-specific embeddings that understand medical context. Generic AI models and search systems simply don't cut it when dealing with conditions like diabetic nephropathy or pharmacological interventions.
