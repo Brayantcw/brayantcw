@@ -3,7 +3,7 @@ title: "About Me"
 date: 2025-07-26T12:00:00-00:00
 draft: false
 author: "Brayan Torres"
-description: "Learn more about Brayan Torres - Cloud Solutions Architect and AI Engineer"
+description: "Learn more about Brayan Torres - Cloud Architect, DevOps Engineer & Kubestronaut"
 hidemeta: false
 comments: false
 disableHLJS: false
@@ -20,81 +20,85 @@ ShowWordCount: true
 
 ## Hello!
 
-I'm **Brayan Torres**, a Cloud Solutions Architect and AI Engineer passionate about building scalable, intelligent systems in the cloud. I specialize in designing and implementing robust cloud architectures that leverage artificial intelligence and machine learning to solve complex business problems.
+I'm **Brayan Torres**, a Cloud Architect and DevOps Engineer specializing in AWS, Kubernetes, and Big Data solutions. I hold a Master's in Big Data & Data Engineering from Universidad Complutense de Madrid. My expertise spans AI Engineering and Machine Learning infrastructure to building production-grade data pipelines, implementing microservices architectures, and establishing DevOps best practices across enterprise environments.
 
 ## Professional Journey
 
-### Current Focus
+### Platform Infrastructure Engineer — ROCHE *(Aug 2024 – Present)*
 
-As a Cloud Solutions Architect, I focus on creating cloud-native AI solutions that scale efficiently and deliver measurable business value. My work spans across multiple cloud platforms, with deep expertise in designing end-to-end AI/ML pipelines that integrate seamlessly with existing enterprise systems.
+Leading the design and operation of a global Kubernetes platform that supports over 100 enterprise applications across multiple regions, maintaining 99.9% uptime. Leading operations, monitoring, security, and cloud adoption strategies for business-critical applications onboarding to the platform. Implementing GitOps automation workflows with Terraform and ArgoCD to enable reliable, scalable infrastructure delivery.
 
-**Core Areas of Expertise:**
-- Cloud architecture design and implementation
-- AI/ML model deployment and scaling
-- DevOps and infrastructure automation
-- Serverless computing and microservices
-- Data engineering and analytics platforms
+**Key technologies:** Cloud Architecture, Enterprise Architecture, Kubernetes, CI/CD, Site Reliability, HPC, Infrastructure as Code, GitOps
 
-### Technical Expertise
+### Master's Student — Universidad Complutense Madrid *(Aug 2024 – Aug 2025)*
 
-**Cloud Platforms & Services:**
-- Amazon Web Services (AWS): EC2, S3, Lambda, SageMaker, EKS, RDS, Terraform
-- Microsoft Azure: Virtual Machines, Blob Storage, Azure Functions, Machine Learning Studio, AKS
-- Google Cloud Platform: Compute Engine, Cloud Storage, Cloud Functions, AI Platform, GKE
-- Multi-cloud strategy and hybrid cloud deployments
+Building ML Infrastructure for Medical Research on GCP. Developed production RAG pipeline using Apache Airflow, Weaviate vector database, and Kubernetes orchestration. Award-winning thesis demonstrating expertise in ML infrastructure at scale.
 
-**AI & Machine Learning:**
-- Model development using PyTorch, TensorFlow, and Scikit-learn
-- MLOps pipeline design with MLflow, Kubeflow, and AWS SageMaker
-- Computer vision applications using OpenCV and deep learning frameworks
-- Natural language processing with transformers and large language models
-- AutoML platforms and model optimization techniques
+**Key technologies:** GCP, Apache Airflow, Apache Spark, Apache Kafka, Databricks, Kubernetes, Weaviate, Python, MLOps
 
-**Infrastructure & DevOps:**
-- Container orchestration with Kubernetes and Docker
-- Infrastructure as Code using Terraform, CloudFormation, and ARM templates
-- CI/CD pipeline design with Jenkins, GitLab CI, and AWS CodePipeline
-- Monitoring and observability with Prometheus, Grafana, and cloud-native tools
-- Configuration management with Ansible and Chef
+### Cloud Consultant & Architect — Amazon Web Services (AWS) *(Nov 2021 – Jul 2024)*
 
-**Programming & Data:**
-- Python for data science, ML, and automation
-- SQL and NoSQL database design and optimization
-- Apache Spark for big data processing
-- API design and microservices architecture
-- Stream processing with Apache Kafka and cloud messaging services
+Led cloud migration initiatives as Technical Lead for enterprise clients across multiple industries, guiding teams in migrating workloads from on-premises and other cloud platforms to AWS. Drove cloud-native transformation through application refactoring, serverless architectures, and Kubernetes implementations. Delivered migration strategies and cloud-native solutions for Fortune 500 companies. Mentored new hires through the Tech U program.
 
-## Professional Philosophy
+**Key technologies:** AWS Cloud, Cloud Migrations, Cloud Refactoring, Site Reliability, Operations, Enterprise Architecture, Kubernetes, Serverless
 
-I believe in building systems that are not just technically sound, but also practical and maintainable. My approach emphasizes:
+### Vendor Business Manager — TD Synnex *(Feb 2021 – Nov 2021)*
 
-**Cloud-First Design**: Leveraging cloud services to build resilient, scalable solutions that can adapt to changing business needs.
+Led cloud solution architecture and business development for a portfolio of over 100 startups and SMEs, designing tailored Azure and AWS infrastructure solutions during the presales process. Developed and executed cloud adoption strategies that expanded the sales pipeline by over $1 million USD. Created technical demonstrations for new cloud products and established a partner enablement program that certified over 30 partners in Azure and AWS technologies.
 
-**AI for Business Value**: Implementing AI solutions that deliver tangible results rather than technology for its own sake.
+**Key technologies:** Sales, Technical Demos, Cloud Architecture, Startup Development, AWS, Azure, Business Development
 
-**Security by Design**: Ensuring that security, compliance, and governance are integral parts of every solution.
+## Technical Skills
 
-**Operational Excellence**: Building systems with monitoring, automation, and disaster recovery as core components.
+**Cloud Platforms:**
+- Amazon Web Services (AWS)
+- Microsoft Azure
+- Google Cloud Platform (GCP)
 
-**Continuous Learning**: Staying current with rapidly evolving cloud and AI technologies through hands-on experimentation and certification.
+**Container & Orchestration:**
+- Kubernetes, Docker, Rancher, VMware
+- Terraform, Ansible
 
-## Key Projects & Experience
+**Big Data & ML Infrastructure:**
+- Apache Airflow, Apache Spark, Apache Kafka
+- Kubeflow, Python
 
-**Cloud Migration & Modernization**: Led large-scale cloud migration projects, transforming legacy monolithic applications into cloud-native microservices architectures.
+**Databases:**
+- PostgreSQL, MongoDB, Redis
+- Weaviate, Elasticsearch
 
-**AI/ML Platform Development**: Designed and implemented enterprise ML platforms that enable data scientists to train, deploy, and monitor models at scale.
+**Monitoring & CI/CD:**
+- Prometheus, Grafana
+- GitHub Actions, ArgoCD
 
-**Cost Optimization**: Implemented cloud cost optimization strategies that reduced infrastructure costs by 40% while improving performance and reliability.
+**Tools & OS:**
+- Linux, Red Hat, Git
 
-**Security & Compliance**: Architected secure cloud environments meeting industry standards including SOC 2, HIPAA, and PCI compliance requirements.
+## Education
 
-## Certifications & Continuous Learning
+- **Master in Big Data & Data Engineering** — Universidad Complutense Madrid *(Aug 2024 – Aug 2025)*
+  - Specialized in ML Infrastructure and Big Data processing
+  - Award-winning thesis on ML Infrastructure for Medical Research on GCP
+- **Bachelor of Electronic Engineering** — Universidad de los Andes *(Jan 2016 – Mar 2020)*
+  - Major in Electronic and Computer Engineering with focus on software systems and infrastructure
 
-I maintain active certifications across major cloud platforms and continuously expand my knowledge through hands-on projects and industry best practices. The cloud landscape evolves rapidly, and staying current requires dedicated learning and practical application.
+## Featured Projects
 
-### Professional Certifications
+- **[Production-Ready Medical AI](https://github.com/Brayantcw/TFM-MDE-BRAYAN-TORRES)**: End-to-end RAG pipeline for healthcare using Apache Airflow, Weaviate vector database, and Kubernetes on Azure. Award-winning Master's thesis enabling researchers to query medical literature and find similar patient cases.
+- **[Kubernetes AI Agent](https://github.com/Brayantcw/Kubernetes_ai_agent)**: AI-powered Kubernetes support agent built with Google ADK and Model Context Protocol (MCP). Enables natural language cluster management, troubleshooting, and automated problem resolution.
+- **[Kubeflow on GKE with A/B Testing](https://github.com/Brayantcw/gke-kubeflow-deployment)**: Production-ready Terraform module for deploying Kubeflow on Google Kubernetes Engine. Includes automated A/B model testing pipelines, model versioning, and canary deployments.
 
-#### AWS Certifications
+## Certifications
+
+### Kubernetes & Cloud Native (CNCF)
+- **Kubestronaut** (2024) — All 5 CNCF Kubernetes certifications
+- **CKS: Certified Kubernetes Security Specialist** (2024)
+- **CKA: Certified Kubernetes Administrator** (2023)
+- **CKAD: Certified Kubernetes Application Developer** (2023)
+- **KCSA: Kubernetes and Cloud Native Security Associate** (2024)
+- **KCNA: Kubernetes and Cloud Native Associate** (2024)
+
+### AWS Certifications
 - **AWS Certified Machine Learning Engineer – Associate** (2025)
 - **AWS Certified AI Practitioner** (2025)
 - **AWS Certified Data Engineer – Associate** (2024)
@@ -104,8 +108,9 @@ I maintain active certifications across major cloud platforms and continuously e
 - **AWS Certified Solutions Architect – Associate** (2021)
 - **AWS Certified Cloud Practitioner** (2021)
 - **Well-Architected Proficient** (2022)
+- **AWS Knowledge: Serverless** (2023)
 
-#### Microsoft Azure Certifications
+### Microsoft Azure Certifications
 - **Azure Solutions Architect Expert** (2020)
 - **Azure AI Engineer Associate** (2021)
 - **Azure Data Scientist Associate** (2021)
@@ -116,53 +121,29 @@ I maintain active certifications across major cloud platforms and continuously e
 - **Power Platform App Maker Associate** (2021)
 - **Power Platform Fundamentals** (2020)
 
-#### Kubernetes & Cloud Native (CNCF)
-- **Kubestronaut** (2024) - All 5 CNCF Kubernetes certifications
-- **CKS: Certified Kubernetes Security Specialist** (2024)
-- **CKA: Certified Kubernetes Administrator** (2023)
-- **CKAD: Certified Kubernetes Application Developer** (2023)
-- **KCSA: Kubernetes and Cloud Native Security Associate** (2024)
-- **KCNA: Kubernetes and Cloud Native Associate** (2024)
-
-#### Infrastructure as Code
+### Infrastructure as Code
 - **HashiCorp Certified: Terraform Associate (003)** (2024)
 
 [View all my certifications on Credly →](https://www.credly.com/users/brayan-andres-torres-contreras)
 
-## Industry Involvement
-
-I actively participate in the cloud and AI communities through:
-- Contributing to open-source projects related to cloud automation and ML tooling
-- Writing technical content about cloud architecture patterns and AI implementation strategies
-- Mentoring teams transitioning to cloud-native architectures
-- Speaking at local tech meetups about practical AI applications in enterprise environments
-
-## Beyond Technology
-
-When I'm not architecting cloud solutions or training machine learning models, I enjoy:
-- Experimenting with new cloud services and AI frameworks in personal projects
-- Reading research papers on distributed systems and machine learning
-- Contributing to technical documentation and knowledge sharing
-- Exploring automation opportunities in everyday processes
-
 ## Let's Connect
 
-I'm always interested in discussing cloud architecture challenges, AI implementation strategies, and emerging technologies. Whether you're planning a cloud migration, implementing your first ML pipeline, or scaling existing AI solutions, I'd love to share insights and learn from your experiences.
+I'm always open to discussing new projects, creative ideas, or opportunities. Whether you're planning a cloud migration, implementing your first ML pipeline, or scaling Kubernetes platforms, I'd love to connect.
 
-- **GitHub**: [@brayantcw](https://github.com/brayantcw)
-- **LinkedIn**: [Brayan Torres](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
-- **Twitter**: [@brayantcw](https://twitter.com/brayantcw)
+- 🌐 **Website**: [brayanto.dev](https://brayanto.dev/)
+- 🐙 **GitHub**: [@Brayantcw](https://github.com/Brayantcw)
+- 💼 **LinkedIn**: [Brayan Torres](https://linkedin.com/in/brayan-torres)
+- 📧 **Email**: [brayantcwork@gmail.com](mailto:brayantcwork@gmail.com)
+- 📍 **Location**: Madrid, Spain
 
 ## This Blog
 
-This blog serves as my platform for sharing practical insights about cloud architecture and AI engineering. Here you'll find:
+This blog serves as my platform for sharing practical insights about cloud architecture, DevOps, and AI engineering. Here you'll find:
 
-- Real-world case studies of cloud implementations
+- Real-world case studies of cloud and Kubernetes implementations
 - Step-by-step guides for deploying AI models in production
-- Best practices for cloud cost optimization and security
-- Reviews of emerging cloud services and AI tools
-- Lessons learned from complex cloud migrations and AI projects
+- Best practices for cloud infrastructure and DevSecOps
+- Terraform modules, GitOps patterns, and automation scripts
+- Lessons learned from complex cloud migrations and Big Data projects
 
-Whether you're a cloud architect, AI engineer, or someone interested in the intersection of cloud computing and artificial intelligence, I hope you find valuable insights here. Feel free to reach out with questions, suggestions, or to share your own experiences.
-
-Thanks for visiting, and I look forward to our discussions about building the future of cloud-native AI systems!
+Thanks for visiting, and I look forward to our discussions about building scalable, production-grade cloud systems!
