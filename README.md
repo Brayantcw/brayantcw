@@ -165,10 +165,11 @@ Drawing from my experience engineering platforms that support 100+ enterprise ap
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brayantcw)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brayantcwork@gmail.com)
+[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://brayanto.dev)
 [![Blog](https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://brayantcw.github.io/brayantcw)
 [![Credily](https://img.shields.io/badge/Credily-00D4FF?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/brayan-torres)
 
-**Madrid, Spain** | **+34 652 020 971**
+**Madrid, Spain** | **[brayanto.dev](https://brayanto.dev)**
 
 ---
 
