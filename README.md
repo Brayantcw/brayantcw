@@ -41,7 +41,7 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 
 ## Professional Experience
 
-### 🏢 **Platform Infrastructure Engineer** @ Roche (Aug 2024 - Present)
+###  **Platform Infrastructure Engineer** @ Roche (Aug 2024 - Present)
 - Engineering scalable Kubernetes-based platforms supporting **100+ cloud-native enterprise applications** on AWS
 - Leading platform security strategy from secure CI/CD practices to runtime hardening
 - Developed infrastructure modules and GitOps workflows using **Terraform** and **ArgoCD**
