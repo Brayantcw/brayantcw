@@ -31,6 +31,14 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
 ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D4?style=flat&logo=azure-devops&logoColor=white)
 
+### AI & MLOps
+![Kubeflow](https://img.shields.io/badge/Kubeflow-00A98F?style=flat&logo=kubeflow&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+
 ## Professional Experience
 
 ### 🏢 **Platform Infrastructure Engineer** @ Roche (Aug 2024 - Present)
@@ -153,12 +161,6 @@ Drawing from my experience engineering platforms that support 100+ enterprise ap
 -  **Learning**: Big Data processing frameworks and Data Engineering patterns  
 -  **Building**: Open-source platform engineering tools and AI-powered automation
 -  **Mentoring**: AWS Tech U program and Computer Science tutoring
-
-## GitHub Stats
-
-![Brayan's GitHub stats](https://github-readme-stats.vercel.app/api?username=brayantcw&show_icons=true&theme=dark&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=brayantcw&layout=compact&theme=dark)
 
 ##  Let's Connect
 
