@@ -8,7 +8,7 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 
 -  Currently working on **scalable Kubernetes platforms** and **cloud-native architectures** 
 -  Pursuing **Master's in Big Data & Data Engineering** at Universidad Complutense Madrid
--  Writing about **AI engineering, cloud infrastructure, and platform engineering** on my [blog](https://brayantcw.github.io/brayantcw)
+-  Writing about **AI engineering, cloud infrastructure, and platform engineering** on my [blog](https://brayanto.dev/blog)
 -  **Kubestronaut** certified (CKA, CKAD) and **AWS DevOps Engineer**
 -  Based in **Madrid, Spain**
 -  Ask me about **Kubernetes, AWS, Terraform, GitOps, and platform engineering**
@@ -136,24 +136,6 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 **Master's in Big Data & Data Engineering** - Universidad Complutense Madrid (2024 - 2025)  
 **Bachelor of Electronic Engineering** - Universidad de los Andes, Colombia (2016 - 2020)
 
-## Blog & Writing
-
-### Hi there! 👋
-
-Welcome to my technical blog where I blend my expertise in **cloud engineering**, **Kubernetes**, and **DevOps** with my passion for **AI engineering** and **MLOps**. As a Platform Infrastructure Engineer and Kubestronaut, I share practical insights on building production-grade, scalable systems at the intersection of cloud-native technologies and artificial intelligence.
-
-#### What You'll Find Here:
-
--  **MLOps & AI Infrastructure**: Deploying and scaling ML models on Kubernetes, building MLOps pipelines, and production AI system patterns
--  **Cloud Architecture & DevOps**: AWS best practices, infrastructure as code with Terraform, GitOps workflows with ArgoCD, and CI/CD automation
--  **Kubernetes Deep Dives**: Advanced scheduling, resource optimization, security hardening, and platform engineering patterns
--  **AI Engineering**: Building RAG systems, AI agents, and exploring cutting-edge AI/ML development patterns
--  **DevSecOps**: Security-first approaches for cloud-native applications, from secure CI/CD to runtime protection
-
-Drawing from my experience engineering platforms that support 100+ enterprise applications at Roche and architecting cloud solutions at AWS, I share real-world patterns, lessons learned, and practical guides for building robust, secure, and scalable systems.
-
-**Visit my blog**: [brayantcw.github.io/brayantcw](https://brayantcw.github.io/brayantcw)
-
 ##  What I'm Currently Working On
 
 -  **AI Engineering**: Building RAG (Retrieval-Augmented Generation) systems and AI agents
@@ -168,7 +150,7 @@ Drawing from my experience engineering platforms that support 100+ enterprise ap
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brayantcw)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brayantcwork@gmail.com)
 [![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://brayanto.dev)
-[![Blog](https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://brayantcw.github.io/brayantcw)
+[![Blog](https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://brayanto.dev/blog)
 [![Credily](https://img.shields.io/badge/Credily-00D4FF?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/brayan-torres)
 
 **Madrid, Spain** | **[brayanto.dev](https://brayanto.dev)**
