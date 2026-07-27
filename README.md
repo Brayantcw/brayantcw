@@ -1,62 +1,43 @@
-# Hi there, I'm Brayan Torres 
+# Brayan Torres
 
-**Platform Infrastructure Engineer @ Roche | Cloud Architect | Kubestronaut**
+**Platform engineer — GPU infrastructure and model serving on Kubernetes.** Madrid, Spain.
 
-I'm a passionate cloud architect and platform engineer with 5+ years of experience building scalable, secure infrastructure solutions. Currently engineering Kubernetes-based platforms at Roche that support 100+ enterprise applications on AWS.
+I run Roche's global Container-as-a-Service platform: GPU node pools on EKS, Triton and Ray Serve for production inference, and 100+ enterprise apps across regions on EKS and on-prem RKE2 — all under GxP regulatory constraints.
 
-## About Me
+Kubestronaut (CKA, CKAD, CKS, KCNA, KCSA) · NVIDIA-Certified Associate, AI Infrastructure & Operations
 
--  Currently working on **scalable Kubernetes platforms** and **cloud-native architectures** 
--  Pursuing **Master's in Big Data & Data Engineering** at Universidad Complutense Madrid
--  Writing about **AI engineering, cloud infrastructure, and platform engineering** on my [blog](https://brayanto.dev/blog)
--  **Kubestronaut** certified (CKA, CKAD) and **AWS DevOps Engineer**
--  Based in **Madrid, Spain**
--  Ask me about **Kubernetes, AWS, Terraform, GitOps, and platform engineering**
+## What I actually work on
 
-##  Tech Stack & Expertise
+**GPU-accelerated Kubernetes** — NVIDIA GPU Operator, device plugin, DCGM exporter. MIG partitioning and time-slicing to get real utilization out of shared node pools.
 
-### Cloud & Infrastructure
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=flat&logo=terraform&logoColor=white)
-![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat&logo=argo&logoColor=white)
+**Inference serving** — Triton Inference Server and Ray Serve on EKS, backing production model-serving for data science and research teams.
 
-### Monitoring & Observability
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)
+**Capacity and cost** — Karpenter tuning across GPU-backed NodePools: consolidation, disruption budgets, workload density. Throughput for high-compute ML jobs against reliability and GPU spend.
 
-### Programming & Automation
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D4?style=flat&logo=azure-devops&logoColor=white)
+**The unglamorous half** — ingress and DNS, node lifecycle, image distribution, control-plane failures, and GPU driver/runtime mismatches.
 
-### AI & MLOps
-![Kubeflow](https://img.shields.io/badge/Kubeflow-00A98F?style=flat&logo=kubeflow&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
+**Platform delivery** — Terraform, ArgoCD, Prometheus/Grafana/Sysdig with SLO dashboards, Vault for secrets, Cilium as kube-proxy replacement for zero-trust networking.
 
-## Professional Experience
+`Kubernetes` `AWS` `Terraform` `ArgoCD` `Karpenter` `Cilium` `Triton` `Ray Serve` `Airflow` `Python` `Go`
 
-###  **Platform Infrastructure Engineer** @ Roche (Aug 2024 - Present)
-- Engineering scalable Kubernetes-based platforms supporting **100+ cloud-native enterprise applications** on AWS
-- Leading platform security strategy from secure CI/CD practices to runtime hardening
-- Developed infrastructure modules and GitOps workflows using **Terraform** and **ArgoCD**
-- Implemented observability stack with **Prometheus, Grafana, and Sysdig**
+## Experience
 
-### **Cloud Architect** @ Amazon Web Services (Nov 2021 - Jul 2024) 
-- Managed cross-functional teams designing **enterprise-grade microservice applications**
-- Orchestrated architectural blueprints for enterprise-level cloud infrastructure
-- Championed CI/CD pipeline development, achieving **70+ improvement** in time-to-market
-- Led cloud infrastructure design encompassing network topology, security frameworks, and system integration
+### **Platform Infrastructure Engineer (L6)** @ Roche · Aug 2024 – Present
+- Own the global CaaS platform end to end — EKS with GPU node pools, on-prem RKE2, 100+ enterprise apps across regions — from Terraform and ArgoCD through on-call
+- Serve ML inference at scale with Triton and Ray Serve for data science and research teams
+- Tune Karpenter across GPU-backed NodePools for consolidation, disruption budgets, and workload density
+- Built the observability stack on Prometheus, Grafana, and Sysdig with SLO dashboards and alerting — **cut MTTR ~40%**
+- Own platform security under pharma regulatory (GxP) constraints: Vault, Cilium, runtime hardening, SAST/SCA in CI
 
-### **Business Manager Cloud** @ TD Synnex (Feb 2021 - Nov 2021)
-- Designed cloud infrastructure architectures for **100+ startups and SMEs**
-- Expanded sales pipeline by **$1M+ USD** through strategic cloud adoption initiatives
-- Certified **30+ partners** in Azure and AWS cloud technologies
+### **Cloud Infrastructure Architect** @ Amazon Web Services · Nov 2021 – Jul 2024
+- Led cross-functional teams shipping enterprise microservice platforms spanning hundreds of services on EKS, Lambda, and Docker — design through production handover
+- Designed cloud architectures end to end: network topology, storage, compute sizing, security controls, mapped to each customer's workload profile and regulatory constraints
+- Built CI/CD for greenfield and legacy applications, **cutting client time-to-market by 70%+**
+- Senior technical advisor on escalations — architecture reviews and production troubleshooting across distributed systems, networking, and cost
+
+### **Business Manager, Cloud** @ TD Synnex · Feb 2021 – Nov 2021
+- Ran technical pre-sales and portfolio strategy for 100+ startups and SMEs on AWS and Azure — **grew pipeline $1M+**
+- Built a partner enablement program that certified **30+ partners**
 
 ##  Certifications
 
@@ -133,30 +114,21 @@ I'm a passionate cloud architect and platform engineer with 5+ years of experien
 
 ## Education
 
-**Master's in Big Data & Data Engineering** - Universidad Complutense Madrid (2024 - 2025)  
-**Bachelor of Electronic Engineering** - Universidad de los Andes, Colombia (2016 - 2020)
+**MSc Artificial Intelligence** — The University of Texas at Austin *(in progress)*
+Deep Learning (PyTorch), NLP, Reinforcement Learning, Planning under Uncertainty.
 
-##  What I'm Currently Working On
+**MSc Big Data & Data Engineering** — Universidad Complutense de Madrid · 9.3/10
+Award-winning thesis: production RAG pipeline for pharmaceutical research on GCP — Airflow, Weaviate, Kubernetes — covering ingestion, model serving, and pipeline automation.
 
--  **AI Engineering**: Building RAG (Retrieval-Augmented Generation) systems and AI agents
--  **Research**: Advanced Kubernetes scheduling and resource optimization
--  **Learning**: Big Data processing frameworks and Data Engineering patterns  
--  **Building**: Open-source platform engineering tools and AI-powered automation
--  **Mentoring**: AWS Tech U program and Computer Science tutoring
+**BSc Electronic Engineering** — Universidad de los Andes, Colombia
 
-##  Let's Connect
+## Currently
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-torres-re7a9839137/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brayantcw)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brayantcwork@gmail.com)
-[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://brayanto.dev)
-[![Blog](https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://brayanto.dev/blog)
-[![Credily](https://img.shields.io/badge/Credily-00D4FF?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/brayan-torres)
+Benchmarking GPU sharing strategies (MIG vs. time-slicing) for mixed inference and training workloads, and writing up Kubernetes internals and incident post-mortems at [brayanto.dev](https://brayanto.dev/blog).
 
-**Madrid, Spain** | **[brayanto.dev](https://brayanto.dev)**
+Mentor on the AWS Tech U program since 2023 — cloud architecture, infrastructure delivery, and debugging.
 
----
+## Contact
 
-⭐ **Open to collaborations on cloud infrastructure, platform engineering, and AI/ML projects**  
-💬 **Available for mentoring in Kubernetes, AWS, and career development**
+[LinkedIn](https://www.linkedin.com/in/brayan-torres-re7a9839137/) · [brayanto.dev](https://brayanto.dev) · [Blog](https://brayanto.dev/blog) · [Credly](https://www.credly.com/users/brayan-andres-torres-contreras) · brayantcwork@gmail.com
 
