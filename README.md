@@ -18,44 +18,34 @@ Kubestronaut (CKA, CKAD, CKS, KCNA, KCSA) · NVIDIA-Certified Associate, AI Infr
 
 **Platform delivery** — Terraform, ArgoCD, Prometheus/Grafana/Sysdig with SLO dashboards, Vault for secrets, Cilium as kube-proxy replacement for zero-trust networking.
 
-`Kubernetes` `AWS` `Terraform` `ArgoCD` `Karpenter` `Cilium` `Triton` `Ray Serve` `Airflow` `Python` `Go`
-
 ## The stack I operate
 
-```mermaid
-flowchart TB
-    subgraph delivery["Delivery"]
-        TF["Terraform"] --> ARGO["ArgoCD · GitOps"]
-    end
+**Platform & compute**
 
-    subgraph platform["Platform · EKS + on-prem RKE2"]
-        KARP["Karpenter<br/>consolidation · disruption budgets"]
-        CIL["Cilium<br/>kube-proxy replacement · zero trust"]
-        VAULT["Vault<br/>secrets"]
-    end
+<img src="https://skillicons.dev/icons?i=kubernetes,aws,gcp,docker,linux" alt="Kubernetes, AWS, GCP, Docker, Linux" height="42"/>
+![RKE2](https://img.shields.io/badge/RKE2-0075A8?style=flat-square)
+![Karpenter](https://img.shields.io/badge/Karpenter-232F3E?style=flat-square)
+![Cilium](https://img.shields.io/badge/Cilium-F8C517?style=flat-square)
 
-    subgraph gpu["GPU layer"]
-        OP["NVIDIA GPU Operator<br/>driver · device plugin"]
-        MIG["MIG partitioning<br/>time-slicing"]
-        DCGM["DCGM exporter"]
-    end
+**GPU & inference**
 
-    subgraph serving["Inference"]
-        TRITON["Triton"]
-        RAY["Ray Serve"]
-    end
+![NVIDIA GPU Operator](https://img.shields.io/badge/NVIDIA_GPU_Operator-76B900?style=flat-square&logo=nvidia&logoColor=white)
+![MIG](https://img.shields.io/badge/MIG_·_time--slicing-76B900?style=flat-square)
+![DCGM](https://img.shields.io/badge/DCGM_exporter-76B900?style=flat-square)
+![Triton](https://img.shields.io/badge/Triton_Inference_Server-76B900?style=flat-square)
+![Ray Serve](https://img.shields.io/badge/Ray_Serve-028CF0?style=flat-square)
 
-    subgraph obs["Observability"]
-        PROM["Prometheus · Grafana · Sysdig<br/>SLO dashboards · alerting"]
-    end
+**Delivery & observability**
 
-    ARGO --> platform
-    KARP --> gpu
-    OP --> MIG --> serving
-    DCGM --> PROM
-    serving --> PROM
-    platform -.->|GxP constraints| serving
-```
+<img src="https://skillicons.dev/icons?i=terraform,githubactions,prometheus,grafana" alt="Terraform, GitHub Actions, Prometheus, Grafana" height="42"/>
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+![Vault](https://img.shields.io/badge/Vault-FFEC6E?style=flat-square&logo=vault&logoColor=black)
+![Sysdig](https://img.shields.io/badge/Sysdig-00AEC7?style=flat-square)
+
+**Data & languages**
+
+<img src="https://skillicons.dev/icons?i=python,go,bash,postgres,redis" alt="Python, Go, Bash, PostgreSQL, Redis" height="42"/>
+![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
 
 ## Experience
 
