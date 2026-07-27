@@ -23,21 +23,36 @@ Kubestronaut (CKA, CKAD, CKS, KCNA, KCSA) · NVIDIA-Certified Associate, AI Infr
 ## Experience
 
 ### **Platform Infrastructure Engineer (L6)** @ Roche · Aug 2024 – Present
-- Own the global CaaS platform end to end — EKS with GPU node pools, on-prem RKE2, 100+ enterprise apps across regions — from Terraform and ArgoCD through on-call
-- Serve ML inference at scale with Triton and Ray Serve for data science and research teams
-- Tune Karpenter across GPU-backed NodePools for consolidation, disruption budgets, and workload density
-- Built the observability stack on Prometheus, Grafana, and Sysdig with SLO dashboards and alerting — **cut MTTR ~40%**
-- Own platform security under pharma regulatory (GxP) constraints: Vault, Cilium, runtime hardening, SAST/SCA in CI
+
+Own the global CaaS platform end to end — EKS with GPU node pools, on-prem RKE2, 100+ enterprise apps across regions — from Terraform and ArgoCD through on-call.
+
+Own cloud development for the product: any AWS service or integration the platform needs, from design and implementation through production operation.
+
+Serve ML inference at scale with Triton and Ray Serve for data science and research teams.
+
+Tune Karpenter across GPU-backed NodePools for consolidation, disruption budgets, and workload density.
+
+Built the observability stack on Prometheus, Grafana, and Sysdig with SLO dashboards and alerting — **cut MTTR ~40%**.
+
+Own platform security under pharma regulatory (GxP) constraints: Vault, Cilium, runtime hardening, SAST/SCA in CI.
 
 ### **Cloud Infrastructure Architect** @ Amazon Web Services · Nov 2021 – Jul 2024
-- Led cross-functional teams shipping enterprise microservice platforms spanning hundreds of services on EKS, Lambda, and Docker — design through production handover
-- Designed cloud architectures end to end: network topology, storage, compute sizing, security controls, mapped to each customer's workload profile and regulatory constraints
-- Built CI/CD for greenfield and legacy applications, **cutting client time-to-market by 70%+**
-- Senior technical advisor on escalations — architecture reviews and production troubleshooting across distributed systems, networking, and cost
+
+Architected end-to-end solutions for enterprise customers — from discovery and design through production handover.
+
+Led enterprise cloud migrations and cloud-native builds: data lakes and analytics platforms, microservice architectures, and application modernization.
+
+Designed the full stack per engagement: network topology, storage, compute sizing, and security controls, mapped to each customer's workload profile and regulatory constraints.
+
+Built CI/CD for greenfield and legacy applications, **cutting client time-to-market by 70%+**.
+
+Senior technical advisor on escalations — architecture reviews and production troubleshooting across distributed systems, networking, and cost.
 
 ### **Business Manager, Cloud** @ TD Synnex · Feb 2021 – Nov 2021
-- Ran technical pre-sales and portfolio strategy for 100+ startups and SMEs on AWS and Azure — **grew pipeline $1M+**
-- Built a partner enablement program that certified **30+ partners**
+
+Ran technical pre-sales and portfolio strategy for 100+ startups and SMEs on AWS and Azure — **grew pipeline $1M+**.
+
+Built a partner enablement program that certified **30+ partners**.
 
 ##  Certifications
 
