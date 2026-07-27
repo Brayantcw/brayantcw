@@ -22,30 +22,44 @@ Kubestronaut (CKA, CKAD, CKS, KCNA, KCSA) · NVIDIA-Certified Associate, AI Infr
 
 **Platform & compute**
 
-<img src="https://skillicons.dev/icons?i=kubernetes,aws,gcp,docker,linux" alt="Kubernetes, AWS, GCP, Docker, Linux" height="42"/>
-![RKE2](https://img.shields.io/badge/RKE2-0075A8?style=flat-square)
-![Karpenter](https://img.shields.io/badge/Karpenter-232F3E?style=flat-square)
-![Cilium](https://img.shields.io/badge/Cilium-F8C517?style=flat-square)
+<p>
+  <img src="https://skillicons.dev/icons?i=kubernetes,aws,gcp,docker,linux" alt="Kubernetes, AWS, GCP, Docker, Linux" height="42"/>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/RKE2-0075A8?style=flat-square" alt="RKE2"/>
+  <img src="https://img.shields.io/badge/Karpenter-232F3E?style=flat-square" alt="Karpenter"/>
+  <img src="https://img.shields.io/badge/Cilium-F8C517?style=flat-square" alt="Cilium"/>
+</p>
 
 **GPU & inference**
 
-![NVIDIA GPU Operator](https://img.shields.io/badge/NVIDIA_GPU_Operator-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![MIG](https://img.shields.io/badge/MIG_·_time--slicing-76B900?style=flat-square)
-![DCGM](https://img.shields.io/badge/DCGM_exporter-76B900?style=flat-square)
-![Triton](https://img.shields.io/badge/Triton_Inference_Server-76B900?style=flat-square)
-![Ray Serve](https://img.shields.io/badge/Ray_Serve-028CF0?style=flat-square)
+<p>
+  <img src="https://img.shields.io/badge/NVIDIA%20GPU%20Operator-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA GPU Operator"/>
+  <img src="https://img.shields.io/badge/MIG%20%2F%20time--slicing-76B900?style=flat-square" alt="MIG and time-slicing"/>
+  <img src="https://img.shields.io/badge/DCGM%20exporter-76B900?style=flat-square" alt="DCGM exporter"/>
+  <img src="https://img.shields.io/badge/Triton%20Inference%20Server-76B900?style=flat-square" alt="Triton Inference Server"/>
+  <img src="https://img.shields.io/badge/Ray%20Serve-028CF0?style=flat-square" alt="Ray Serve"/>
+</p>
 
 **Delivery & observability**
 
-<img src="https://skillicons.dev/icons?i=terraform,githubactions,prometheus,grafana" alt="Terraform, GitHub Actions, Prometheus, Grafana" height="42"/>
-![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
-![Vault](https://img.shields.io/badge/Vault-FFEC6E?style=flat-square&logo=vault&logoColor=black)
-![Sysdig](https://img.shields.io/badge/Sysdig-00AEC7?style=flat-square)
+<p>
+  <img src="https://skillicons.dev/icons?i=terraform,githubactions,prometheus,grafana" alt="Terraform, GitHub Actions, Prometheus, Grafana" height="42"/>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white" alt="ArgoCD"/>
+  <img src="https://img.shields.io/badge/Vault-FFEC6E?style=flat-square&logo=vault&logoColor=black" alt="Vault"/>
+  <img src="https://img.shields.io/badge/Sysdig-00AEC7?style=flat-square" alt="Sysdig"/>
+</p>
 
 **Data & languages**
 
-<img src="https://skillicons.dev/icons?i=python,go,bash,postgres,redis" alt="Python, Go, Bash, PostgreSQL, Redis" height="42"/>
-![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
+<p>
+  <img src="https://skillicons.dev/icons?i=python,go,bash,postgres,redis" alt="Python, Go, Bash, PostgreSQL, Redis" height="42"/>
+</p>
+<p>
+  <img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Apache Airflow"/>
+</p>
 
 ## Experience
 
