@@ -20,6 +20,43 @@ Kubestronaut (CKA, CKAD, CKS, KCNA, KCSA) · NVIDIA-Certified Associate, AI Infr
 
 `Kubernetes` `AWS` `Terraform` `ArgoCD` `Karpenter` `Cilium` `Triton` `Ray Serve` `Airflow` `Python` `Go`
 
+## The stack I operate
+
+```mermaid
+flowchart TB
+    subgraph delivery["Delivery"]
+        TF["Terraform"] --> ARGO["ArgoCD · GitOps"]
+    end
+
+    subgraph platform["Platform · EKS + on-prem RKE2"]
+        KARP["Karpenter<br/>consolidation · disruption budgets"]
+        CIL["Cilium<br/>kube-proxy replacement · zero trust"]
+        VAULT["Vault<br/>secrets"]
+    end
+
+    subgraph gpu["GPU layer"]
+        OP["NVIDIA GPU Operator<br/>driver · device plugin"]
+        MIG["MIG partitioning<br/>time-slicing"]
+        DCGM["DCGM exporter"]
+    end
+
+    subgraph serving["Inference"]
+        TRITON["Triton"]
+        RAY["Ray Serve"]
+    end
+
+    subgraph obs["Observability"]
+        PROM["Prometheus · Grafana · Sysdig<br/>SLO dashboards · alerting"]
+    end
+
+    ARGO --> platform
+    KARP --> gpu
+    OP --> MIG --> serving
+    DCGM --> PROM
+    serving --> PROM
+    platform -.->|GxP constraints| serving
+```
+
 ## Experience
 
 ### **Platform Infrastructure Engineer (L6)** @ Roche · Aug 2024 – Present
